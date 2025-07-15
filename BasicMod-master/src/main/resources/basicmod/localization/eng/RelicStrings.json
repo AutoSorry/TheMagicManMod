@@ -1,0 +1,52 @@
+{
+  "${modID}:MagicDice": {
+    "NAME": "Magic Dice",
+    "FLAVOR": "20 dice for 20 magic.",
+    "DESCRIPTIONS": [
+      "At start of battle, gain ",
+      " #y${modID}:Magics. NL Card or relics with #y${modID}:Magic need a check( DC = #y${modID}:Magics ) to take effect. NL #yCritical #ySuccess makes double effect and #yCritical #yFailure makes u take #b6 damage."
+    ]
+  },
+  "${modID}:GoodEating": {
+    "NAME": "Good Eating",
+    "FLAVOR": "Something U'd like to share to your friend.",
+    "DESCRIPTIONS": [
+      "At start of battle, gain #b1 #y${modID}:Happy for every #b2 #y${modID}:Magic cards in deck."
+    ]
+  },
+  "${modID}:MiaowtainTop": {
+    "NAME": "MiaowtainTop",
+    "FLAVOR": "What can miaow miaow say?",
+    "DESCRIPTIONS": [
+      "When you get #yFailure, try again."
+    ]
+  },
+  "${modID}:MagicComputer": {
+    "NAME": "Magic Computer",
+    "FLAVOR": "You know, our computer is expensive enouph, so it should never crash...At least I wish not to.",
+    "DESCRIPTIONS": [
+      "At start of turn, take a check to gain #b1 [E]."
+    ]
+  },
+  "${modID}:MiddlePart": {
+    "NAME": "Middle Part",
+    "FLAVOR": "Good hairstyle, magic man thinks so.",
+    "DESCRIPTIONS": [
+      "At start of battle, gain #b3 #y${modID}:Magics and #y${modID}:Happy."
+    ]
+  },
+  "${modID}:EasternLeaf": {
+    "NAME": "Eastern Leaf",
+    "FLAVOR": "Maybe this is the least magic-like thing for magic man.",
+    "DESCRIPTIONS": [
+      "At start of battle, pay #b10 gold to heal #b10 health if current health less than half of max health."
+    ]
+  },
+  "${modID}:SpeedingCar": {
+    "NAME": "Speeding Car",
+    "FLAVOR": "--This check is too difficult! --Start a speeding, magic man!",
+    "DESCRIPTIONS": [
+      "The first check of each turn increases by 1d20."
+    ]
+  }
+}

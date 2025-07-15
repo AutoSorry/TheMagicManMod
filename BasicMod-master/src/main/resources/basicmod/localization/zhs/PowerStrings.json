@@ -1,0 +1,204 @@
+{
+  "${modID}:AlarmismPower": {
+    "NAME": "危言耸听",
+    "DESCRIPTIONS": [
+      "在 ",
+      " ", " ",
+      "回合内防止所有伤害并返还等量 #y格挡 。"
+    ]
+  },
+  "${modID}:AlarmismUp": {
+    "NAME": "危言耸听+",
+    "DESCRIPTIONS": [
+      "在 ",
+      " ", " ",
+      "回合内防止所有伤害并返还一半 #y格挡 。"
+    ]
+  },
+  "${modID}:AllAdvantage": {
+    "NAME": "常态优势",
+    "DESCRIPTIONS": [
+      "你的所有检定获得 #y优势。"
+    ]
+  },
+  "${modID}:BombPower": {
+    "NAME": "炸了兄弟",
+    "DESCRIPTIONS": [
+      "下 ",
+      " ", " ",
+      "回合将 #y这不就炸了吗兄弟 加入手牌。"
+    ]
+  },
+  "${modID}:CannotBeng": {
+    "NAME": "绷不住了",
+    "DESCRIPTIONS": [
+      "检定失败时，减少 ",
+      " 层 #y神人值。"
+    ]
+  },
+  "${modID}:CombinePower": {
+    "NAME": "奇妙混合物",
+    "DESCRIPTIONS": [
+      "回合开始时，多抽 ",
+      " 张牌。"
+    ]
+  },
+  "${modID}:DetectMagic": {
+    "NAME": "侦测神人",
+    "DESCRIPTIONS": [
+      "当一名敌人进行豁免检定时，造成 ",
+      " 点伤害。"
+    ]
+  },
+  "${modID}:EveryIsEmoji": {
+    "NAME": "万物Emoji",
+    "DESCRIPTIONS": [
+      "回合开始时，多抽 ",
+      " 张牌并 消耗 ",
+      " 张牌，随后向手牌中加入 ",
+      " 张牌并 消耗 ",
+      " 张牌，随后向手牌中加入 ",
+      " 张 #yEmoji 。"
+    ]
+  },
+  "${modID}:LifeFlavorPower": {
+    "NAME": "很有生活气息了",
+    "DESCRIPTIONS": [
+      "当检定失败时，获得 ",
+      " 点 临时生命 。"
+    ]
+  },
+  "${modID}:KillLessThan16": {
+    "NAME": "照人",
+    "DESCRIPTIONS": [
+      "回合结束时，击杀所有生命值低于 #b16 的敌人。"
+    ]
+  },
+  "${modID}:GaintMagic": {
+    "NAME": "巨神人大师",
+    "DESCRIPTIONS": [
+      "打出 #y神人 牌时，随机造成 ",
+      " 点伤害。"
+    ]
+  },
+  "${modID}:HappyPower": {
+    "NAME": "兴奋",
+    "DESCRIPTIONS": [
+      "检定获得 ",
+      " 加值。"
+    ]
+  },
+  "${modID}:HitPower": {
+    "NAME": "神人导术",
+    "DESCRIPTIONS": [
+      "在 ",
+      " 回合内检定获得 1d4 加值。",
+      " 回合内检定获得 1d4 加值。"
+    ]
+  },
+  "${modID}:Magics": {
+    "NAME": "神人值",
+    "DESCRIPTIONS": [
+      "那你真是神人！"
+    ]
+  },
+  "${modID}:MagicSpread": {
+    "NAME": "神人传播",
+    "DESCRIPTIONS": [
+      "回合结束时进行一次豁免检定，豁免失败则失去 ",
+      " 点 力量 。"
+    ]
+  },
+  "${modID}:MagicFormPower": {
+    "NAME": "神人形态",
+    "DESCRIPTIONS": [
+      "回合开始时，获得 ",
+      " 层 #y神人值 和 #y兴奋 。"
+    ]
+  },
+  "${modID}:NextAlwaysSuccess": {
+    "NAME": "下次一定成功",
+    "DESCRIPTIONS": [
+      "下 ", " 次检定必定成功。"
+    ]
+  },
+  "${modID}:NextAlwaysCriticalSuccess": {
+    "NAME": "下次一定大成功",
+    "DESCRIPTIONS": [
+      "下 ", " 次检定必定 #y大成功 。"
+    ]
+  },
+  "${modID}:NextDisadvantage": {
+    "NAME": "下次劣势",
+    "DESCRIPTIONS": [
+      "下 ", " 检定获得 #y劣势 。"
+    ]
+  },
+  "${modID}:NinetyEightPower": {
+    "NAME": "98/100",
+    "DESCRIPTIONS": [
+      "检定大成功时，获得 ", " 层 敏捷 。"
+    ]
+  },
+  "${modID}:Plus1": {
+    "NAME": "复读",
+    "DESCRIPTIONS": [
+      "检定大成功时，抽 ", " 张牌。"
+    ]
+  },
+  "${modID}:Plus1Up": {
+    "NAME": "复读+",
+    "DESCRIPTIONS": [
+      "检定成功时，抽 ", " 张牌。"
+    ]
+  },
+  "${modID}:Resistance": {
+    "NAME": "抵抗",
+    "DESCRIPTIONS": [
+      "下 ",
+      " 回合伤害减半。",
+      " 回合伤害减半。"
+    ]
+  },
+  "${modID}:SadPower": {
+    "NAME": "低落",
+    "DESCRIPTIONS": [
+      "检定获得 ",
+      " 减值。"
+    ]
+  },
+  "${modID}:Speeding": {
+    "NAME": "飞车",
+    "DESCRIPTIONS": [
+      "下次检定获得 1d20 加值。"
+    ]
+  },
+  "${modID}:SteamDelay": {
+    "NAME": "蒸汽启动不了",
+    "DESCRIPTIONS": [
+      "对所有敌人造成 ",
+      " 点伤害。（还有 ",
+      " 回合）",
+      " 回合）"
+    ]
+  },
+  "${modID}:Tired": {
+    "NAME": "燃尽",
+    "DESCRIPTIONS": [
+      "下 ",
+      " 次检定获得 #b1 减值。"
+    ]
+  },
+  "${modID}:WoodiePower": {
+    "NAME": "伍迪之力",
+    "DESCRIPTIONS": [
+      "打击和防御耗能变为 0 ，打出它们后抽 ", " 张牌。"
+    ]
+  },
+  "${modID}:WulPower": {
+    "NAME": "捂脸",
+    "DESCRIPTIONS": [
+      "检定时获得 ", " 点 格挡 。"
+    ]
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "${modID}:Azgc": {
+    "NAME": "[/azgc]",
+    "DESCRIPTION": "Ethereal. Deal !D! damage. If the enemy is intended to attack, apply !M! Vulnerable."
+  },
+  "${modID}:BrainDeadStrike": {
+    "NAME": "Brain-dead Strike",
+    "DESCRIPTION": "${modID}:Magic. Deal X + !M! times of !D! damage to ALL enemies. NL Always -> Discard ALL cards in hand."
+  },
+  "${modID}:BrilliantAppearance": {
+    "NAME": "Brilliant Appearance!",
+    "DESCRIPTION": "Innate. Exhausted. ${modID}:Magic. Deal !D! damage to ALL enemies. Gain !M! ${modID}:Magics. NL Failed -> Gain double ${modID}:Magics."
+  },
+  "${modID}:CreditStrike": {
+    "NAME": "Credit Strike",
+    "DESCRIPTION": "Deal !D! damage. If the enemy's rate of health is lower, deal another !D! damage and gain 1 ${modID}:Happy; otherwise, gain 1 ${modID}:Sad."
+  },
+  "${modID}:DeerCrash": {
+    "NAME": "Deer Crash",
+    "DESCRIPTION": "Discard ALL non-Attack in hand, each deal !D! damage to ALL enemies."
+  },
+  "${modID}:DifficultToBeng": {
+    "NAME": "Difficult to Beng",
+    "DESCRIPTION": "Deal !D! damage. Reduce 1 ${modID}:Magics when ${modID}:check failed this turn."
+  },
+  "${modID}:FoodShare": {
+    "NAME": "Food Share",
+    "DESCRIPTION": "${modID}:Magic. Deal half of ${modID}:Magics amount of damage !M! times. NL Failed -> Lose half of the ${modID}:Magics.",
+    "EXTENDED_DESCRIPTION": [" NL (Deal !D! damage !M! times.)"]
+  },
+  "${modID}:GoodMorning": {
+    "NAME": "Good Morning",
+    "DESCRIPTION": "Innate. For each Attack in hand, deal !D! damage and gain 1 [E].",
+    "EXTENDED_DESCRIPTION": [" NL (You have !M! Attack in hand.)"]
+  },
+  "${modID}:ImHittingHard": {
+    "NAME": "I'm Hitting Hard",
+    "DESCRIPTION": "Exhausted. Deal !D! damage. Apply !M! Vulnerable. Add Are You Hitting? to hand.",
+    "UPGRADE_DESCRIPTION": "Exhausted. Deal !D! damage. Apply !M! Vulnerable. Add upgraded Are You Hitting? to hand."
+  },
+  "${modID}:LongSand": {
+    "NAME": "Long Sand",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Can be upgraded many times."
+  },
+  "${modID}:LittleDrink": {
+    "NAME": "Little Drink",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! ${modID}:Magics and temporary Strength."
+  },
+  "${modID}:LightCast": {
+    "NAME": "Light Cast",
+    "DESCRIPTION": "Deal !D! damage to ALL. Kill ALL enemies whose health is lower than 16 at end of turn. NL If ${modID}:Magics less than !M!, randomly deal !D! damage."
+  },
+  "${modID}:MagicStrike": {
+    "NAME": "Magic Strike",
+    "DESCRIPTION": "${modID}:Magic. Deal ${modID}:Magics damage.",
+    "UPGRADE_DESCRIPTION": "${modID}:Magic. Deal ${modID}:Magics damage. NL This ${modID}:check obtains ${modID}:Advantage",
+    "EXTENDED_DESCRIPTION": [" NL (Deal !D! damage.)"]
+  },
+  "${modID}:MagicAndMagic": {
+    "NAME": "Magic and Magic",
+    "DESCRIPTION": "${modID}:Magic. Deal !D! damage. Success -> Take another ${modID}:check to deal double damage."
+  },
+  "${modID}:Nia": {
+    "NAME": "nia",
+    "DESCRIPTION": "Deal !D! damage. NL Return to hand from discard after playing an Attack which cost is not 0."
+  },
+  "${modID}:RandomSpeaking": {
+    "NAME": "Random Speaking",
+    "DESCRIPTION": "Deal 1d!M! + !D! damage. Gain 1d!M! ${modID}:Magics."
+  },
+  "${modID}:RushRush": {
+    "NAME": "Rush Rush",
+    "DESCRIPTION": "Deal !D! damage twice. Add 2 Rush to hand."
+  },
+  "${modID}:SinisterSmile": {
+    "NAME": "Sinister Smile",
+    "DESCRIPTION": "Deal !D! damage. Gain temporay health as many as the unblocked damage."
+  },
+  "${modID}:SingleSix": {
+    "NAME": "6",
+    "DESCRIPTION": "Deal !D! damage 6 times. NL When in hand, reduce !M! cost this turn whenever playing cards， reset when this card drawn again."
+  },
+  "${modID}:SteamStart": {
+    "NAME": "Steam Start",
+    "DESCRIPTION": "Innate. Ethereal. Exhausted. ${modID}:Magic. Deal !D! damage. Failed -> Deal !D! damage to ALL enemies 7 turns later."
+  },
+  "${modID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "${modID}:TeamKill": {
+    "NAME": "Team-kill",
+    "DESCRIPTION": "Take !D! damage. Gain !M! Vigor and !M! ${modID}:Magics."
+  },
+  "${modID}:ThisBombBro": {
+    "NAME": "This Bomb, bro!",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies X times. Add a copy to hand next X turns."
+  },
+  "${modID}:TrueAlgorismGod": {
+    "NAME": "True Algorism God",
+    "DESCRIPTION": "Deal !D! damage. Double the base damage and modulo !M! after played."
+  },
+  "${modID}:Wrud": {
+    "NAME": "wrud",
+    "DESCRIPTION": "Innate. Deal !D! damage. Gain !B! Block. NL Increase damage and Block by !M! when drawn."
+  },
+
+  "${modID}:Alarmism": {
+    "NAME": "Alarmism",
+    "DESCRIPTION": "Defend ALL attack damage in 1 turn, give back equal amount of Block.",
+    "UPGRADE_DESCRIPTION": "Defend ALL attack damage in 1 turn, give back half amount of Block."
+  },
+  "${modID}:AreYouHitting": {
+    "NAME": "Are You Hitting?",
+    "DESCRIPTION": "Exhausted. If the enemy is intended to attack, Stun it and add I'm Hitting Hard to hand.",
+    "UPGRADE_DESCRIPTION": "Exhausted. If the enemy is intended to attack, Stun it and add upgraded I'm Hitting Hard to hand."
+  },
+  "${modID}:Bb": {
+    "NAME": "[/bb]",
+    "DESCRIPTION": "Exhausted. Ethereal. Apply !M! Weak. NL Deal 11 damage to ALL when this card is discarded."
+  },
+  "${modID}:Bx": {
+    "NAME": "[/bx]",
+    "DESCRIPTION": "Ethereal. Gain !M! temporary health. Draw 1 card."
+  },
+  "${modID}:BangBangT": {
+    "NAME": "[/bangbangt]",
+    "DESCRIPTION": "Ethereal. Unplayable. While in hand, randomly discard 1 card and gain !M! Strength whenever play another card."
+  },
+  "${modID}:CheckCheck": {
+    "NAME": "Check Check",
+    "DESCRIPTION": "${modID}:Magic. Gain !M! [E]."
+  },
+  "${modID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "${modID}:Exactly": {
+    "NAME": "Exactly",
+    "DESCRIPTION": "Reduce !M! ${modID}:Magics. Draw 1 card."
+  },
+  "${modID}:FakeNineChampion": {
+    "NAME": "Fake Nine Champion",
+    "DESCRIPTION": "Exhausted. Add 9 random card to bottom of draw pile.",
+    "UPGRADE_DESCRIPTION": "Exhausted. Add 9 random upgraded card to bottom of draw pile."
+  },
+  "${modID}:GrassHead": {
+    "NAME": "Grass Head",
+    "DESCRIPTION": "Make ALL enemies take !M! ${modID}:saving checks, each failure leads to 6 health loss."
+  },
+  "${modID}:IAmMagicMan": {
+    "NAME": "I Am Magic Man!",
+    "DESCRIPTION": "Exhausted. Increase ${modID}:Magics by 5. Next ${modID}:check result is always success.",
+    "UPGRADE_DESCRIPTION": "Exhausted. Increase ${modID}:Magics by 5. Next ${modID}:check result is always ${modID}:Critical Success."
+  },
+  "${modID}:HelpHelpMe": {
+    "NAME": "Help Help Me",
+    "DESCRIPTION": "Exhausted. Let an enemy take a saving check. If saving failed, heal you !M! health."
+  },
+  "${modID}:HitMagic": {
+    "NAME": "Hit Magic",
+    "DESCRIPTION": "Gain !B! Block. ${modID}:Check + 1d4 in 1 turn."
+  },
+  "${modID}:JustRandomDeer": {
+    "NAME": "Just Random Deer",
+    "DESCRIPTION": "Exhausted. Gain !M! ${modID}:Resistance."
+  },
+  "${modID}:LittleManLanguage": {
+    "NAME": "Little Man Language",
+    "DESCRIPTION": "ALL cards change cost to 1 this turn.",
+    "UPGRADE_DESCRIPTION": "ALL cards that cost more than 1 change cost to 1 this turn."
+  },
+  "${modID}:LookStillAttractive": {
+    "NAME": "Look Still Attractive",
+    "DESCRIPTION": "Gain !M! ${modID}:Happy. If the enemy is intended to attack, gain !M! Strength; otherwise, gain !M! Dexterity.."
+  },
+  "${modID}:MagicBigMove": {
+    "NAME": "Magic Big Move",
+    "DESCRIPTION": "Exhausted. ${modID}:Magic. Apply !M! Vulnerable and Weak to ALL enemies. NL Failed -> Add !M! [/Bb] to hand."
+  },
+  "${modID}:MagicDefend": {
+    "NAME": "Magic Defend",
+    "DESCRIPTION": "${modID}:Magic. Gain ${modID}:Magics + !B! Block."
+  },
+  "${modID}:MagicFriend": {
+    "NAME": "Magic Friend",
+    "DESCRIPTION": "Exhausted. Randomly gain !B! Block or add [/BangBangT] to draw pile. Add 2 copies to dicard pile.",
+    "UPGRADE_DESCRIPTION": "Exhausted. Randomly gain !B! Block or add upgraded [/BangBangT] to draw pile. Add 2 copies to dicard pile."
+  },
+  "${modID}:Man": {
+    "NAME": "man",
+    "DESCRIPTION": "Gain !B! Block. Add a copy to draw pile after played."
+  },
+  "${modID}:MilkDragonCry": {
+    "NAME": "Milk-dragon Cry",
+    "DESCRIPTION": " ${modID}:Magic. Gain !B! Block. NL Failed -> Still gain half of the Block. NL Return to hand from discard pile when taken damage."
+  },
+  "${modID}:MagicSpread": {
+    "NAME": "Magic Spread",
+    "DESCRIPTION": "Exhausted. Make an enemy take a ${modID}:saving check each start of turn and lose 1 Strength if saving failed.",
+    "UPGRADE_DESCRIPTION": "Make an enemy take a ${modID}:saving check each end of turn and lose 1 Strength if saving failed."
+  },
+  "${modID}:Niu": {
+    "NAME": "niu",
+    "DESCRIPTION": "Exhausted. Double one of the buffs or debuffs randomly.",
+    "UPGRADE_DESCRIPTION": "Exhausted. Double one of the buffs randomly."
+  },
+  "${modID}:NotAnyEvent": {
+    "NAME": "Not Any Event",
+    "DESCRIPTION": "Gain !B! Block. Next ${modID}:check obtains ${modID}:Disadvantage."
+  },
+  "${modID}:NotToSay": {
+    "NAME": "Nothing to Say",
+    "DESCRIPTION": "Gain !B! Block twice. End your turn."
+  },
+  "${modID}:Ohno": {
+    "NAME": "ohno",
+    "DESCRIPTION": "Gain !B! Block. Apply 2 ${modID}:Sad to ALL."
+  },
+  "${modID}:Reply": {
+    "NAME": "Reply",
+    "DESCRIPTION": "Randomly add !M! upgraded ${modID}:Emoji to hand."
+  },
+  "${modID}:Rush": {
+    "NAME": "Rush",
+    "DESCRIPTION": "Retain. Exhausted. Draw !M! card. Next ${modID}:check decrease by 1."
+  },
+  "${modID}:Roller": {
+    "NAME": "Roller",
+    "DESCRIPTION": "Draw !M! cards. Add 1 Void to discard and 1 Dazed to draw pile."
+  },
+  "${modID}:SoHandsomeBro": {
+    "NAME": "So Handsome, bro!",
+    "DESCRIPTION": "Exhausted. Gain !B! Block. NL Can be played only when ${modID}:Magics no less than 16.",
+    "UPGRADE_DESCRIPTION": "Exhausted. Retain. Gain !B! Block. NL Can be played only when ${modID}:Magics no less than 16."
+  },
+  "${modID}:THKG": {
+    "NAME": "THKG",
+    "DESCRIPTION": "Exhausted. Draw !M! cards. Gain !M! [E]."
+  },
+  "${modID}:WhatCanISay": {
+    "NAME": "what can i say",
+    "DESCRIPTION": "Exhausted. Discard ALL cards in hand and draw cards until full. NL Can be played only when have no [E].",
+    "UPGRADE_DESCRIPTION": "Discard ALL cards in hand and draw cards until full. NL Can be played only when have no [E]."
+  },
+  "${modID}:WordForWord": {
+    "NAME": "Word For Word",
+    "DESCRIPTION": "Exhaust ALL cards in hand. Add equal amount of random cards to hand."
+  },
+  "${modID}:YouAreAttackGod": {
+    "NAME": "You Are Attack God!",
+    "DESCRIPTION": "${modID}:Magic. If an enemy is intended to attack, gain !M! Buffer. NL Failed -> Gain 1 Vulnerable."
+  },
+  "${modID}:Yx": {
+    "NAME": "[/yx]",
+    "DESCRIPTION": "Ethereal. Make an enemy lose !M! health. Draw 1 card."
+  },
+
+  "${modID}:Combination": {
+    "NAME": "Combination",
+    "DESCRIPTION": "Gain Confution. At start of turn, draw 1 more card."
+  },
+  "${modID}:EverythingIsEmoji": {
+    "NAME": "Everything Is Emoji",
+    "DESCRIPTION": "At start of turn, draw 1 more card; then Exhaust 1 card and add a random ${modID}:Emoji to hand."
+  },
+  "${modID}:GaintMagicMaster": {
+    "NAME": "Gaint Magic Master",
+    "DESCRIPTION": "ALL ${modID}:check decrease by 5, but deal !M! damage to random when playing ${modID}:Magic cards."
+  },
+  "${modID}:HitCardMan": {
+    "NAME": "Hit Card Man",
+    "DESCRIPTION": "At start of turn, randomly gain !M! Strength or Dexterity or ${modID}:Magics."
+  },
+  "${modID}:LifeFlavor": {
+    "NAME": "Life Flavor",
+    "DESCRIPTION": "Gain !M! temporary health when ${modID}:check failed."
+  },
+  "${modID}:MagicDetection": {
+    "NAME": "Magic Detection",
+    "DESCRIPTION": "Deal !M! damage when an enemy is taking ${modID}:saving check."
+  },
+  "${modID}:MagicForm": {
+    "NAME": "Magic Form",
+    "DESCRIPTION": "Gain !M! ${modID}:Magics and ${modID}:Happy at start of turn. Obtain ${modID}:Advantage for your ALL ${modID}:check."
+  },
+  "${modID}:NinetyEight": {
+    "NAME": "Scores 98/100",
+    "DESCRIPTION": "Gain !M! Dexterity after ${modID}:Critical Success."
+  },
+  "${modID}:PlusOne": {
+    "NAME": "Repeat 1 After 1",
+    "DESCRIPTION": "Draw 1 card after ${modID}:Critical Success.",
+    "UPGRADE_DESCRIPTION": "Draw 1 card after Success."
+  },
+  "${modID}:Wul": {
+    "NAME": "[/wul]",
+    "DESCRIPTION": "Ethereal. Gain !M! Block when ${modID}:check."
+  },
+  "${modID}:WoodieMaster": {
+    "NAME": "Woodie Master",
+    "DESCRIPTION": "Gain !M! Strength and Dexterity. NL Free to play Starter Strike and Defend, draw 1 card after playing them."
+  }
+}

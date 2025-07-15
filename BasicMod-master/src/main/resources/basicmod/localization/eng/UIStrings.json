@@ -1,0 +1,18 @@
+{
+  "${modID}:MagicCheck": {
+    "TEXT": [
+      "Magic check now: NL DC = ",
+      " Result = ",
+      " NL ",
+      "Success!", "Critical Success!", "Failure!", "Critical Failure!"
+    ]
+  },
+  "${modID}:SavingCheck": {
+    "TEXT": [
+      "Saving check now: NL DC = ",
+      " Result = ",
+      " NL ",
+      "Success!", "Failure!"
+    ]
+  }
+}

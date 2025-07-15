@@ -1,0 +1,94 @@
+[
+  {
+    "PROPER_NAME": "Magic",
+    "NAMES": [
+      "Magic"
+    ],
+    "DESCRIPTION": "This card is Magic, it needs to take a check. Only Success makes sense unless there are other notes."
+  },
+  {
+    "PROPER_NAME": "Magics",
+    "NAMES": [
+      "Magics"
+    ],
+    "DESCRIPTION": "The power of magic man. Related to ALL check."
+  },
+  {
+    "PROPER_NAME": "Always",
+    "NAMES": [
+      "Always"
+    ],
+    "DESCRIPTION": "Do as the text after this whatever the check result is."
+  },
+  {
+    "PROPER_NAME": "Happy",
+    "NAMES": [
+      "Happy"
+    ],
+    "DESCRIPTION": "Your check result increases by 1."
+  },
+  {
+    "PROPER_NAME": "Sad",
+    "NAMES": [
+      "Sad"
+    ],
+    "DESCRIPTION": "Your check result decreases by 1."
+  },
+  {
+    "PROPER_NAME": "Advantage",
+    "NAMES": [
+      "Advantage"
+    ],
+    "DESCRIPTION": "Your check result takes the max value of two tries."
+  },
+  {
+    "PROPER_NAME": "Disadvantage",
+    "NAMES": [
+      "Disadvantage"
+    ],
+    "DESCRIPTION": "Your check result takes the min value of two tries."
+  },
+  {
+    "PROPER_NAME": "Emoji",
+    "NAMES": [
+      "Emoji"
+    ],
+    "DESCRIPTION": "Cards like [/xx]. They are always Ethereal."
+  },
+  {
+    "PROPER_NAME": "Check",
+    "NAMES": [
+      "check",
+      "Check"
+    ],
+    "DESCRIPTION": "You throw a 1d20 dice, DC is your Magics. Some buffs can influence the result."
+  },
+  {
+    "PROPER_NAME": "Resistance",
+    "NAMES": [
+      "Resistance"
+    ],
+    "DESCRIPTION": "Reduce ALL damage to half."
+  },
+  {
+    "PROPER_NAME": "Saving Check",
+    "NAMES": [
+      "saving checks"
+    ],
+    "DESCRIPTION": "Let a monster throw a 1d20 dice, DC is your Magics. Some buffs can influence the result."
+  },
+  {
+    "PROPER_NAME": "Critical Success",
+    "NAMES": [
+      "Critical Success"
+    ],
+    "DESCRIPTION": "You are so lucky to have 20 in 1d20."
+  },
+  {
+    "PROPER_NAME": "Critical Failure",
+    "NAMES": [
+      "Critical Failure"
+    ],
+    "DESCRIPTION": "You are not so lucky to have 1 in 1d20."
+  }
+]

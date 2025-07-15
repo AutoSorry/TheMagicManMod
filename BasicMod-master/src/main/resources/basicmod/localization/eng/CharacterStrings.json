@@ -1,0 +1,13 @@
+{
+  "${modID}:MagicMan": {
+    "NAMES": [
+      "The Magic Man",
+      "the Magic Man"
+    ],
+    "TEXT": [
+      "You are Magic Man, and I am also Magic man.",
+      "Magic Man is so handsome, bro!",
+      "Oh, Magic Man!"
+    ]
+  }
+}

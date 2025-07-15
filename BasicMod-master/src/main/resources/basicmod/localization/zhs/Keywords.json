@@ -1,0 +1,86 @@
+[
+  {
+    "PROPER_NAME": "神人",
+    "NAMES": [
+      "神人"
+    ],
+    "DESCRIPTION": "带有神人标记的卡牌和遗物生效前需要进行一次神人检定，检定成功才能生效，有特殊标注的效果除外。"
+  },
+  {
+    "PROPER_NAME": "神人值",
+    "NAMES": [
+      "神人值"
+    ],
+    "DESCRIPTION": "这是神人的力量来源，与神人的检定相关并且可能被一些行为所影响。"
+  },
+  {
+    "PROPER_NAME": "兴奋",
+    "NAMES": [
+      "兴奋"
+    ],
+    "DESCRIPTION": "你的检定获得 1 加值。"
+  },
+  {
+    "PROPER_NAME": "低落",
+    "NAMES": [
+      "低落"
+    ],
+    "DESCRIPTION": "你的检定获得 1 减值。"
+  },
+  {
+    "PROPER_NAME": "优势",
+    "NAMES": [
+      "优势"
+    ],
+    "DESCRIPTION": "你的检定取两次之中的较大值。"
+  },
+  {
+    "PROPER_NAME": "劣势",
+    "NAMES": [
+      "劣势"
+    ],
+    "DESCRIPTION": "你的检定取两次之中的较小值。"
+  },
+  {
+    "PROPER_NAME": "表情",
+    "NAMES": [
+      "表情"
+    ],
+    "DESCRIPTION": "形如[/xx]的卡牌。"
+  },
+  {
+    "PROPER_NAME": "检定",
+    "NAMES": [
+      "检定"
+    ],
+    "DESCRIPTION": "投一次神人二十面骰，难度等级为你的神人值。结果受到各种加减值影响。"
+  },
+  {
+    "PROPER_NAME": "抵抗",
+    "NAMES": [
+      "抵抗"
+    ],
+    "DESCRIPTION": "受到的所有伤害减半。"
+  },
+  {
+    "PROPER_NAME": "豁免检定",
+    "NAMES": [
+      "豁免检定"
+    ],
+    "DESCRIPTION": "让一个敌人进行一次难度为你的神人值的1d20检定，结果只有成功和失败之分。"
+  },
+  {
+    "PROPER_NAME": "大成功",
+    "NAMES": [
+      "大成功"
+    ],
+    "DESCRIPTION": "您是运气仙人！在1d20中取得了最大值20的好成绩！"
+  },
+  {
+    "PROPER_NAME": "大失败",
+    "NAMES": [
+      "大失败"
+    ],
+    "DESCRIPTION": "我是运气[/bb]，1d20只拿到了最小值1[/bb][/bb][/bb]。"
+  }
+]

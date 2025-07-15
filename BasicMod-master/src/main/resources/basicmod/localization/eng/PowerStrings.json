@@ -1,0 +1,204 @@
+{
+  "${modID}:AlarmismPower": {
+    "NAME": "Alarmism",
+    "DESCRIPTIONS": [
+      "Defend ALL attack damage in ",
+      " turn", " turns",
+      ", give back equal amount of Block."
+    ]
+  },
+  "${modID}:AlarmismUp": {
+    "NAME": "Alarmism+",
+    "DESCRIPTIONS": [
+      "Defend ALL attack damage in ",
+      " turn", " turns",
+      ", give back half amount of Block."
+    ]
+  },
+  "${modID}:AllAdvantage": {
+    "NAME": "All Advantage",
+    "DESCRIPTIONS": [
+      "All checks obtain #yAdvantage."
+    ]
+  },
+  "${modID}:BombPower": {
+    "NAME": "This Bomb, bro!",
+    "DESCRIPTIONS": [
+      "Next ",
+      " turn", " turns",
+      ", Add This Bomb, bro! to hand."
+    ]
+  },
+  "${modID}:CannotBeng": {
+    "NAME": "Cannot Beng",
+    "DESCRIPTIONS": [
+      "Reduce ",
+      " #yMagics when check failed."
+    ]
+  },
+  "${modID}:CombinePower": {
+    "NAME": "Combination",
+    "DESCRIPTIONS": [
+      "Draw ",
+      " card at start of turn."
+    ]
+  },
+  "${modID}:DetectMagic": {
+    "NAME": "Detect Magic",
+    "DESCRIPTIONS": [
+      "Deal ",
+      " damage when an enemy is taking saving check."
+    ]
+  },
+  "${modID}:EveryIsEmoji": {
+    "NAME": "Everything Is Emoji",
+    "DESCRIPTIONS": [
+      "At start of turn, draw ",
+      " more card; then Exhaust ",
+      " card and add ",
+      " more cards. then Exhaust ",
+      " cards and add ",
+      " #yEmoji to hand."
+    ]
+  },
+  "${modID}:LifeFlavorPower": {
+    "NAME": "Life Flavor",
+    "DESCRIPTIONS": [
+      "Gain ",
+      " temporary health when check failed."
+    ]
+  },
+  "${modID}:KillLessThan16": {
+    "NAME": "Cast Light",
+    "DESCRIPTIONS": [
+      "Kill ALL Enemies whose health is less than #b16 at end of turn."
+    ]
+  },
+  "${modID}:GaintMagic": {
+    "NAME": "Gaint Magic Master",
+    "DESCRIPTIONS": [
+      "Deal ",
+      " damage to random when playing #yMagic cards."
+    ]
+  },
+  "${modID}:HappyPower": {
+    "NAME": "Happy",
+    "DESCRIPTIONS": [
+      "Check increases ",
+      " ."
+    ]
+  },
+  "${modID}:HitPower": {
+    "NAME": "Hit Magic",
+    "DESCRIPTIONS": [
+      "Check increases by 1d4 in ",
+      " turn.",
+      " turns."
+    ]
+  },
+  "${modID}:Magics": {
+    "NAME": "Magics",
+    "DESCRIPTIONS": [
+      "You are what a magic man!"
+    ]
+  },
+  "${modID}:MagicSpread": {
+    "NAME": "MagicSpread",
+    "DESCRIPTIONS": [
+      "Take a saving check at end of turn, lose ",
+      " Strength if saving failed."
+    ]
+  },
+  "${modID}:MagicFormPower": {
+    "NAME": "Magic Form",
+    "DESCRIPTIONS": [
+      "At start of turn, gain ",
+      " #yMagics and #yHappy."
+    ]
+  },
+  "${modID}:NextAlwaysSuccess": {
+    "NAME": "Next Always Success",
+    "DESCRIPTIONS": [
+      "Next ", " check is always success."
+    ]
+  },
+  "${modID}:NextAlwaysCriticalSuccess": {
+    "NAME": "Next Always #yCritical Success",
+    "DESCRIPTIONS": [
+      "Next ", " check is always #yCritical #ySuccess."
+    ]
+  },
+  "${modID}:NextDisadvantage": {
+    "NAME": "Next Disadvantage",
+    "DESCRIPTIONS": [
+      "Next ", " check obtain #yDisadvantage."
+    ]
+  },
+  "${modID}:NinetyEightPower": {
+    "NAME": "98/100",
+    "DESCRIPTIONS": [
+      "When check #yCritical #ySuccess, gain ", " Dexterity."
+    ]
+  },
+  "${modID}:Plus1": {
+    "NAME": "+1",
+    "DESCRIPTIONS": [
+      "Draw ", " card after #yCritical #ySuccess."
+    ]
+  },
+  "${modID}:Plus1Up": {
+    "NAME": "+1Up",
+    "DESCRIPTIONS": [
+      "Draw ", " card after success."
+    ]
+  },
+  "${modID}:Resistance": {
+    "NAME": "Resistance",
+    "DESCRIPTIONS": [
+      "Reduce damage and health loss to half in .",
+      " turn.",
+      " turns."
+    ]
+  },
+  "${modID}:SadPower": {
+    "NAME": "Sad",
+    "DESCRIPTIONS": [
+      "Check decreases by ",
+      " ."
+    ]
+  },
+  "${modID}:Speeding": {
+    "NAME": "Speeding",
+    "DESCRIPTIONS": [
+      "Next check increases by 1d20."
+    ]
+  },
+  "${modID}:SteamDelay": {
+    "NAME": "SteamDelay",
+    "DESCRIPTIONS": [
+      "Deal ",
+      " damage to ALL ",
+      " turn later.",
+      " turns later."
+    ]
+  },
+  "${modID}:Tired": {
+    "NAME": "Tired",
+    "DESCRIPTIONS": [
+      "Next ",
+      " check decreases by #b1."
+    ]
+  },
+  "${modID}:WoodiePower": {
+    "NAME": "WoodiePower",
+    "DESCRIPTIONS": [
+      "Free to play Strike and Defend. Draw ", " card after playing them."
+    ]
+  },
+  "${modID}:WulPower": {
+    "NAME": "WulPower",
+    "DESCRIPTIONS": [
+      "Gain ", " Block when check."
+    ]
+  }
+}

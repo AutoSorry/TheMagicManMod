@@ -1,0 +1,52 @@
+{
+  "${modID}:MagicDice": {
+    "NAME": "神人二十面骰",
+    "FLAVOR": "二十面给神人的二十年。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得 ",
+      " 层 #y${modID}:神人值 。 NL 该遗物用于进行卡牌和遗物的 #y${modID}:检定 ， NL #y${modID}:大成功 使得效果翻倍； #y${modID}:大失败 使你受到 #b6 点伤害。"
+    ]
+  },
+  "${modID}:GoodEating": {
+    "NAME": "好吃的",
+    "FLAVOR": "神人喜欢并且经常分享给神人朋友的东西。",
+    "DESCRIPTIONS": [
+      "战斗开始时，卡组中每有 #b2 张 #y${modID}:神人 牌获得 #b1 层 #y${modID}:兴奋 。"
+    ]
+  },
+  "${modID}:MiaowtainTop": {
+    "NAME": "喵顶山",
+    "FLAVOR": "山顶猫喵喵顶山，喵顶山猫山顶猫。",
+    "DESCRIPTIONS": [
+      "当你 #y${modID}:检定 失败时，重新掷骰。"
+    ]
+  },
+  "${modID}:MagicComputer": {
+    "NAME": "“魔法”电脑",
+    "FLAVOR": "这是一台具有神奇“魔法”的电脑，至于是什么魔法我不说。",
+    "DESCRIPTIONS": [
+      "回合开始时进行一次 #y${modID}:检定 ，成功则获得 #b1 [E]。"
+    ]
+  },
+  "${modID}:MiddlePart": {
+    "NAME": "中分头",
+    "FLAVOR": "好发型！神人是这样说的。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得 #b3 层 #y${modID}:神人值 和 #y${modID}:兴奋 。"
+    ]
+  },
+  "${modID}:EasternLeaf": {
+    "NAME": "来自东方的叶叶",
+    "FLAVOR": "大概是神人最不神人的东西了。",
+    "DESCRIPTIONS": [
+      "战斗开始时，如果生命值低于一半，付出 #b10 金币回复 #b10 点生命。"
+    ]
+  },
+  "${modID}:SpeedingCar": {
+    "NAME": "飞车",
+    "FLAVOR": "——这个检定好难! ——开一把，神人!",
+    "DESCRIPTIONS": [
+      "每回合第一个 #y${modID}:检定 获得1d20加值。"
+    ]
+  }
+}

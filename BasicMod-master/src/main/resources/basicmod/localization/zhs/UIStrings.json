@@ -1,0 +1,18 @@
+{
+  "${modID}:MagicCheck": {
+    "TEXT": [
+      "神人检定: NL DC = ",
+      " NL Result = ",
+      " NL ",
+      "成功!", "大成功!", "失败!", "大失败!"
+    ]
+  },
+  "${modID}:SavingCheck": {
+    "TEXT": [
+      "豁免检定: NL DC = ",
+      " NL Result = ",
+      " NL ",
+      "成功!", "失败!"
+    ]
+  }
+}
