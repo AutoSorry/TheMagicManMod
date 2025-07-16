@@ -172,7 +172,7 @@
   },
   "${modID}:LookStillAttractive": {
     "NAME": "Look Still Attractive",
-    "DESCRIPTION": "Gain !M! ${modID}:Happy. If the enemy is intended to attack, gain !M! Strength; otherwise, gain !M! Dexterity.."
+    "DESCRIPTION": "Exhausted. Gain !M! ${modID}:Happy. If the enemy is intended to attack, gain !M! Strength; otherwise, gain !M! Dexterity.."
   },
   "${modID}:MagicBigMove": {
     "NAME": "Magic Big Move",
@@ -249,7 +249,7 @@
   },
   "${modID}:YouAreAttackGod": {
     "NAME": "You Are Attack God!",
-    "DESCRIPTION": "${modID}:Magic. If an enemy is intended to attack, gain !M! Buffer. NL Failed -> Gain 1 Vulnerable."
+    "DESCRIPTION": "${modID}:Magic. If an enemy is intended to attack, prevent the next !M! times you would lose health. NL Failed -> Gain 1 Vulnerable."
   },
   "${modID}:Yx": {
     "NAME": "[/yx]",

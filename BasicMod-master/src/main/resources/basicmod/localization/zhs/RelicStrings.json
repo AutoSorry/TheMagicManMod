@@ -11,7 +11,7 @@
     "NAME": "好吃的",
     "FLAVOR": "神人喜欢并且经常分享给神人朋友的东西。",
     "DESCRIPTIONS": [
-      "战斗开始时，卡组中每有 #b2 张 #y${modID}:神人 牌获得 #b1 层 #y${modID}:兴奋 。"
+      "战斗开始时，卡组中每有 #b1 张 #y${modID}:神人 牌获得 #b1 层 #y${modID}:兴奋 。"
     ]
   },
   "${modID}:MiaowtainTop": {

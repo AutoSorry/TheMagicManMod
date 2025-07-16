@@ -31,7 +31,11 @@ public class Man extends BaseCard{
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new MakeTempCardInDrawPileAction(this.makeCopy(), 1, true, true));
+        AbstractCard c = this.makeCopy();
+        if (upgraded) {
+            c.upgrade();
+        }
+        addToBot(new MakeTempCardInDrawPileAction(c, 1, true, true));
     }
 
     @Override

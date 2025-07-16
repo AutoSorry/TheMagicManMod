@@ -19,7 +19,7 @@ public class Bb extends BaseCard{
             MyCharacter.Meta.CARD_COLOR,
             CardType.SKILL,
             CardRarity.COMMON,
-            CardTarget.SELF_AND_ENEMY,
+            CardTarget.ENEMY,
             0
     );
 

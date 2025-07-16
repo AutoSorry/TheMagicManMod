@@ -11,7 +11,7 @@
     "NAME": "Good Eating",
     "FLAVOR": "Something U'd like to share to your friend.",
     "DESCRIPTIONS": [
-      "At start of battle, gain #b1 #y${modID}:Happy for every #b2 #y${modID}:Magic cards in deck."
+      "At start of battle, gain #b1 #y${modID}:Happy for every #y${modID}:Magic card in deck."
     ]
   },
   "${modID}:MiaowtainTop": {

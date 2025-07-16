@@ -54,7 +54,11 @@ public class MagicFriend extends BaseCard{
             }
             addToBot(new MakeTempCardInDrawPileAction(c, 1, true, true));
         }
-        addToBot(new MakeTempCardInDiscardAction(new MagicFriend(), 2));
+        AbstractCard c1 = this.makeCopy();
+        if (upgraded) {
+            c1.upgrade();
+        }
+        addToBot(new MakeTempCardInDiscardAction(c1, 2));
     }
 
     @Override

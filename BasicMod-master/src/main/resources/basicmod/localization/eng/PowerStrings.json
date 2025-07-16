@@ -96,6 +96,13 @@
       " turns."
     ]
   },
+  "${modID}:HitCard": {
+    "NAME": "HitCard",
+    "DESCRIPTIONS": [
+      "At start of turn, randomly gain ",
+      " Strength or Dexterity or ${modID}:Magics."
+    ]
+  },
   "${modID}:Magics": {
     "NAME": "Magics",
     "DESCRIPTIONS": [

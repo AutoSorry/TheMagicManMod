@@ -172,7 +172,7 @@
   },
   "${modID}:LookStillAttractive": {
     "NAME": "我看也是风韵犹存",
-    "DESCRIPTION": "获得 !M! 层 ${modID}:兴奋 。如果目标的意图为攻击，获得 !M! 层 力量 ；否则，获得 !M! 层 敏捷 。"
+    "DESCRIPTION": " 消耗 。获得 !M! 层 ${modID}:兴奋 。如果目标的意图为攻击，获得 !M! 层 力量 ；否则，获得 !M! 层 敏捷 。"
   },
   "${modID}:MagicBigMove": {
     "NAME": "神人开大",
@@ -240,8 +240,8 @@
   },
   "${modID}:WhatCanISay": {
     "NAME": "what can i say",
-    "DESCRIPTION": " 消耗 。丢弃所有手牌并抽牌知直到手牌抽满。 NL 只有在没有 [E] 时可以打出。",
-    "UPGRADE_DESCRIPTION": "丢弃所有手牌并抽牌知直到手牌抽满。 NL 只有在没有 [E] 时可以打出。"
+    "DESCRIPTION": " 消耗 。丢弃所有手牌并抽牌直到手牌抽满。 NL 只有在没有 [E] 时可以打出。",
+    "UPGRADE_DESCRIPTION": "丢弃所有手牌并抽牌直到手牌抽满。 NL 只有在没有 [E] 时可以打出。"
   },
   "${modID}:WordForWord": {
     "NAME": "字字对译",
@@ -249,7 +249,7 @@
   },
   "${modID}:YouAreAttackGod": {
     "NAME": "你是攻击领域大神",
-    "DESCRIPTION": " ${modID}:神人 。如果敌人的意图为攻击，获得 !M! 层 缓冲 。 NL 检定失败时给予自己 1 层 易伤 。"
+    "DESCRIPTION": " ${modID}:神人 。如果敌人的意图为攻击，阻止下 !M! 次你受到的生命值损伤。 NL 检定失败时给予自己 1 层 易伤 。"
   },
   "${modID}:Yx": {
     "NAME": "[/yx]",

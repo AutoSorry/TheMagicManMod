@@ -32,7 +32,9 @@ public class GoodEating extends BaseRelic{
         }
         flash();
         addToBot(new RelicAboveCreatureAction(p, this));
-        addToBot(new ApplyPowerAction(p, p, new HappyPower(p, count / 2)));
+        if (count > 1) {
+            addToBot(new ApplyPowerAction(p, p, new HappyPower(p, count)));
+        }
     }
 
     @Override

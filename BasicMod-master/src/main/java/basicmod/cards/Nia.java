@@ -37,7 +37,7 @@ public class Nia extends BaseCard{
 
     @Override
     public void triggerOnCardPlayed(AbstractCard c) {
-        if (c.type == CardType.ATTACK && c.cost > 0) {
+        if (c.type == CardType.ATTACK && c.costForTurn > 0) {
             addToBot(new DiscardToHandAction(this));
         }
     }
