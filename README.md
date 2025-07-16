@@ -6,11 +6,11 @@
 ---
 
 请注意！作者对于数值的把控比较迟钝，而代码能力又不够见长，加之设备与时间的限制，所以在这个模组中你会发现：忍不住不抓的**超模卡**、看都不想看一眼的**垃圾卡**、旋转问号先生、比测试画风更**抽象的卡面**，以及零零散散的小**bug**。
-如果发现**描述/显示/实际**效果上的问题，可以偷偷地告诉这个家伙3051319318@qq.com。
+如果发现**描述/显示/实际效果**上的问题，可以偷偷地告诉这个家伙3051319318@qq.com。
 
 ---
 
-如果想要直接游玩，可以直接下载 MainModFile 文件夹中的 MagicMan.jar 文件，复制到 steam/steamapps/common/SlayTheSpire/Mods 中即可，没有 Mods 文件夹就自己创建一个。
+如果想要直接游玩，可以直接下载 MainModFile 文件夹中的 MagicMan.jar 文件，复制到 steam/steamapps/common/SlayTheSpire/Mods 中即可，没有 Mods 文件夹就自己创建一个。注意需要在创意工坊中下载前置Mod：ModTheSpire,BaseMod,Stslib。
 
 在 NJUBox 里面会存放它的所有历史版本，如果想要体验作者写的愚蠢bug可以看一看。 https://box.nju.edu.cn/d/d2e59fa942fb4308a8d8/
 
