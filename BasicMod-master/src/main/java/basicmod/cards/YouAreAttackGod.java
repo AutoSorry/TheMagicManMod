@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BufferPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
+import tags.CustomTags;
 
 public class YouAreAttackGod extends BaseCard{
     public static final String ID = makeID("YouAreAttackGod");
@@ -27,6 +28,7 @@ public class YouAreAttackGod extends BaseCard{
         super(ID, info);
 
         setMagic(MAGIC, UPG_MAGIC);
+        tags.add(CustomTags.MAGIC);
 
     }
 

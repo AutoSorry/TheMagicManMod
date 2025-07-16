@@ -25,7 +25,7 @@
     "NAME": "Magic Computer",
     "FLAVOR": "You know, our computer is expensive enouph, so it should never crash...At least I wish not to.",
     "DESCRIPTIONS": [
-      "At start of turn, take a check to gain #b1 [E]."
+      "At start of turn, take a check to gain [E] ."
     ]
   },
   "${modID}:MiddlePart": {

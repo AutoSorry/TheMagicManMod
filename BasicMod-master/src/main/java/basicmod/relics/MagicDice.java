@@ -151,7 +151,6 @@ public class MagicDice extends BaseRelic {
         }
         if (rs == 1) {
             magicResult = CheckResult.CRITICAL_FAILURE;
-            addToBot(new DamageAction(p, new DamageInfo(p, 6, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
             resultTextIdx = 6;
             result = 1;
         } else if (rs == 20) {
