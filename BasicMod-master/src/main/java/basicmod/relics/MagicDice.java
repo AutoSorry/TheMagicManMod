@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 
@@ -153,7 +154,7 @@ public class MagicDice extends BaseRelic {
             magicResult = CheckResult.CRITICAL_FAILURE;
             resultTextIdx = 6;
             result = 1;
-        } else if (rs == 20) {
+        } else if (rs == 20 || (rs == 19 && p.hasPower(NinetyEightPower.POWER_ID))) {
             if (p.hasPower(Plus1.POWER_ID)) {
                 addToBot(new DrawCardAction(p, p.getPower(Plus1.POWER_ID).amount));
             }
@@ -162,7 +163,7 @@ public class MagicDice extends BaseRelic {
             }
             magicResult = CheckResult.CRITICAL_SUCCESS;
             resultTextIdx = 4;
-            result = 20;
+            result = rs;
         } else if (result < dc) {
             magicResult = CheckResult.FAILURE;
             resultTextIdx = 5;
@@ -180,6 +181,9 @@ public class MagicDice extends BaseRelic {
             if (p.hasPower(LifeFlavorPower.POWER_ID)) {
                 addToBot(new AddTemporaryHPAction(p, p, p.getPower(LifeFlavorPower.POWER_ID).amount));
             }
+        }
+        if (magicResult == CheckResult.CRITICAL_SUCCESS && p.hasPower(NinetyEightPower.POWER_ID)) {
+            addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, p.getPower(NinetyEightPower.POWER_ID).amount)));
         }
         String text = TEXT1[0] + dc + TEXT1[1] + result + TEXT1[2] + TEXT1[resultTextIdx];
         AbstractDungeon.effectList.add(new ThoughtBubble(p.dialogX, p.dialogY, 3.0F, text, true));
@@ -214,6 +218,9 @@ public class MagicDice extends BaseRelic {
             magicResult = CheckResult.SUCCESS;
             result = rs + bonus;
             resultTextIdx = 3;
+        }
+        if (magicResult == CheckResult.SUCCESS && p.hasPower(LifeFlavorPower.POWER_ID)) {
+            addToBot(new AddTemporaryHPAction(p, p, p.getPower(LifeFlavorPower.POWER_ID).amount));
         }
         String text = TEXT2[0] + dc + TEXT2[1] + result + TEXT2[2] + TEXT2[resultTextIdx];
         AbstractDungeon.effectList.add(new ThoughtBubble(p.dialogX, p.dialogY, 3.0F, text, true));

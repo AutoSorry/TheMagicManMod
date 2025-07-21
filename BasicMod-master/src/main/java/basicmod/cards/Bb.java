@@ -30,6 +30,8 @@ public class Bb extends BaseCard{
         super(ID, info);
 
         setMagic(MAGIC, UPG_MAGIC);
+        setDamage(11);
+        isMultiDamage = true;
         setEthereal(true);
         setExhaust(true);
         tags.add(CustomTags.EMOJI);
@@ -37,7 +39,7 @@ public class Bb extends BaseCard{
 
     @Override
     public void triggerOnManualDiscard() {
-        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, 11, DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.POISON));
+        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, multiDamage, DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.POISON));
     }
 
     @Override

@@ -66,7 +66,7 @@
   },
   "${modID}:RandomSpeaking": {
     "NAME": "Random Speaking",
-    "DESCRIPTION": "Deal 1d!M! + !D! damage. Gain 1d!M! ${modID}:Magics."
+    "DESCRIPTION": "Deal !D! damage and 1d!M! HP loss. Gain 1d!M! ${modID}:Magics."
   },
   "${modID}:RushRush": {
     "NAME": "Rush Rush",
@@ -117,7 +117,7 @@
   },
   "${modID}:Bb": {
     "NAME": "[/bb]",
-    "DESCRIPTION": "Exhausted. Ethereal. Apply !M! Weak. NL Deal 11 damage to ALL when this card is discarded."
+    "DESCRIPTION": "Exhausted. Ethereal. Apply !M! Weak. NL Deal !D! damage to ALL when this card is discarded."
   },
   "${modID}:Bx": {
     "NAME": "[/bx]",
@@ -274,7 +274,7 @@
   },
   "${modID}:LifeFlavor": {
     "NAME": "Life Flavor",
-    "DESCRIPTION": "Gain !M! temporary health when ${modID}:check failed."
+    "DESCRIPTION": "Gain !M! temporary health when ${modID}:check failed or an enemy's saving check succeeded."
   },
   "${modID}:MagicDetection": {
     "NAME": "Magic Detection",
@@ -286,7 +286,7 @@
   },
   "${modID}:NinetyEight": {
     "NAME": "Scores 98/100",
-    "DESCRIPTION": "Gain !M! Dexterity after ${modID}:Critical Success."
+    "DESCRIPTION": "${modID}:Critical Success also happens when you get 19. Gain !M! Dexterity after ${modID}:Critical Success."
   },
   "${modID}:PlusOne": {
     "NAME": "Repeat 1 After 1",

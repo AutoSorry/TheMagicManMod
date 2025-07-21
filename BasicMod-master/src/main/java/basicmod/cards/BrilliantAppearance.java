@@ -35,6 +35,7 @@ public class BrilliantAppearance extends BaseCard{
         super(ID, info);
 
         setDamage(DAMAGE, UPG_DAMAGE);
+        isMultiDamage = true;
         setMagic(MAGIC, UPE_MAGIC);
         setExhaust(true);
         setInnate(true);
@@ -46,9 +47,10 @@ public class BrilliantAppearance extends BaseCard{
         MagicDice dice = (MagicDice) p.getRelic(MagicDice.ID);
         MagicDice.CheckResult res = dice.magicCheck();
         if (res == MagicDice.CheckResult.SUCCESS) {
-            addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            addToBot(new DamageAllEnemiesAction(p, multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         } else if (res == MagicDice.CheckResult.CRITICAL_SUCCESS){
-            addToBot(new DamageAllEnemiesAction(p, damage * 2, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            addToBot(new DamageAllEnemiesAction(p, multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            addToBot(new DamageAllEnemiesAction(p, multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         } else {
             addToBot(new ApplyPowerAction(p, p, new Magics(p, magicNumber)));
         }

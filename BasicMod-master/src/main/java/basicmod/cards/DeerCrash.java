@@ -27,6 +27,7 @@ public class DeerCrash extends BaseCard{
         super(ID, info);
 
         setDamage(DAMAGE, UPG_DAMAGE);
+        isMultiDamage = true;
 
     }
 
@@ -35,7 +36,7 @@ public class DeerCrash extends BaseCard{
         for (AbstractCard c : p.hand.group) {
             if (c.type != CardType.ATTACK) {
                 addToBot(new DiscardSpecificCardAction(c));
-                addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_HEAVY));
+                addToBot(new DamageAllEnemiesAction(p, multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_HEAVY));
             }
         }
     }

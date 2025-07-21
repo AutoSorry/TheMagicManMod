@@ -62,7 +62,7 @@
   },
   "${modID}:RandomSpeaking": {
     "NAME": "随机说话",
-    "DESCRIPTION": "造成 1d!M! + !D! 点伤害。增加 1d!M! 点 ${modID}:神人值 。"
+    "DESCRIPTION": "造成 !D! 点伤害和 1d!M!的生命流失。增加 1d!M! 点 ${modID}:神人值 。"
   },
   "${modID}:RushRush": {
     "NAME": "Rush Rush",
@@ -113,7 +113,7 @@
   },
   "${modID}:Bb": {
     "NAME": "[/bb]",
-    "DESCRIPTION": " 消耗 。 虚无 。给予 !M! 层 虚弱 。 NL 这张牌在回合内被丢弃时，对所有敌人造成 11 点伤害。"
+    "DESCRIPTION": " 消耗 。 虚无 。给予 !M! 层 虚弱 。 NL 这张牌在回合内被丢弃时，对所有敌人造成 !D! 点伤害。"
   },
   "${modID}:Bx": {
     "NAME": "[/bx]",
@@ -274,7 +274,7 @@
   },
   "${modID}:LifeFlavor": {
     "NAME": "那很有生活气息了",
-    "DESCRIPTION": "每当 ${modID}:检定 失败时，获得 !M! 层 临时生命 。"
+    "DESCRIPTION": "每当 ${modID}:检定 失败或者敌人 ${modID}:豁免检定 成功时，获得 !M! 层 临时生命 。"
   },
   "${modID}:MagicDetection": {
     "NAME": "神人侦测",
@@ -286,7 +286,7 @@
   },
   "${modID}:NinetyEight": {
     "NAME": "98分",
-    "DESCRIPTION": " ${modID}:检定 ${modID}:大成功 时获得 !M! 层 敏捷 。"
+    "DESCRIPTION": "投到 19 也可以触发 ${modID}:大成功 。 ${modID}:检定 ${modID}:大成功 时获得 !M! 层 敏捷 。"
   },
   "${modID}:PlusOne": {
     "NAME": "复读+1机",

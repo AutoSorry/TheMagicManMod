@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import tags.CustomTags;
@@ -52,9 +53,13 @@ public class BrainDeadStrike extends BaseCard{
         }
         effect += magicNumber;
         if (res == MagicDice.CheckResult.CRITICAL_SUCCESS) {
-            addToBot(new DamageAllEnemiesAction(p, damage * effect * 2, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            for (AbstractMonster monster: AbstractDungeon.getMonsters().monsters) {
+                addToBot(new DamageAction(monster, new DamageInfo(p, damage * effect * 2, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            }
         } else if (res == MagicDice.CheckResult.SUCCESS) {
-            addToBot(new DamageAllEnemiesAction(p, damage * effect, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            for (AbstractMonster monster: AbstractDungeon.getMonsters().monsters) {
+                addToBot(new DamageAction(monster, new DamageInfo(p, damage * effect, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            }
         }
         if (!freeToPlayOnce) {
             p.energy.use(EnergyPanel.totalCount);

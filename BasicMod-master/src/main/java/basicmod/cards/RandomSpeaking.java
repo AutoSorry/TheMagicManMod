@@ -6,6 +6,7 @@ import basicmod.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -39,7 +40,8 @@ public class RandomSpeaking extends BaseCard{
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int amt = random(1, magicNumber);
-        addToBot(new DamageAction(m, new DamageInfo(p, damage + amt, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new LoseHPAction(m, p, amt));
         addToBot(new ApplyPowerAction(p, p, new Magics(p, amt)));
     }
 

@@ -31,13 +31,14 @@ public class LightCast extends BaseCard{
         super(ID, info);
 
         setDamage(DAMAGE);
+        isMultiDamage = true;
         setMagic(MAGIC, UPG_MAGIC);
 
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.LIGHTNING));
+        addToBot(new DamageAllEnemiesAction(p, multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.LIGHTNING));
         if (p.getPower(Magics.POWER_ID).amount < magicNumber) {
             addToBot(new DamageRandomEnemyAction(new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         }

@@ -20,7 +20,7 @@ public class SteamStart extends BaseCard{
             CardType.ATTACK,
             CardRarity.UNCOMMON,
             CardTarget.ENEMY,
-            3
+            2
     );
 
     private static final int DAMAGE = 32;

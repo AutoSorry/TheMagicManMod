@@ -29,6 +29,7 @@ public class ThisBombBro extends BaseCard{
         super(ID, info);
 
         setDamage(DAMAGE, UPG_DAMAGE);
+        isMultiDamage = true;
 
     }
 
@@ -43,7 +44,7 @@ public class ThisBombBro extends BaseCard{
             p.getRelic("Chemical X").flash();
         }
         for (int i = 0; i < effect; i++) {
-            addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+            addToBot(new DamageAllEnemiesAction(p, multiDamage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
         if (!freeToPlayOnce) {
             p.energy.use(EnergyPanel.totalCount);
