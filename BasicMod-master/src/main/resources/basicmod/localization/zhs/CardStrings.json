@@ -70,7 +70,7 @@
   },
   "${modID}:SinisterSmile": {
     "NAME": "奸笑",
-    "DESCRIPTION": "造成 !D! 伤害。获得相当于造成伤害的 临时生命 。"
+    "DESCRIPTION": "造成 !D! 伤害。如果目标的意图不是攻击，再造成 !D! 点伤害并获得等量 临时生命 。"
   },
   "${modID}:SingleSix": {
     "NAME": "6",

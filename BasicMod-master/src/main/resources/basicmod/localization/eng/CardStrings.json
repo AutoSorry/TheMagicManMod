@@ -74,7 +74,7 @@
   },
   "${modID}:SinisterSmile": {
     "NAME": "Sinister Smile",
-    "DESCRIPTION": "Deal !D! damage. Gain temporay health as many as the unblocked damage."
+    "DESCRIPTION": "Deal !D! damage. If the enemy is not intended to attack, deal another !D! damage and gain such temporay health."
   },
   "${modID}:SingleSix": {
     "NAME": "6",
