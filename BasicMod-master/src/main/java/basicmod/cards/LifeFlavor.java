@@ -18,8 +18,8 @@ public class LifeFlavor extends BaseCard{
             1
     );
 
-    private static final int MAGIC = 5;
-    private static final int UPG_MAGIC = 2;
+    private static final int MAGIC = 3;
+    private static final int UPG_MAGIC = 1;
 
     public LifeFlavor() {
         super(ID, info);
