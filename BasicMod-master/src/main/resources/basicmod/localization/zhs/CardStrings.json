@@ -5,7 +5,7 @@
   },
   "${modID}:BrainDeadStrike": {
     "NAME": "无脑打击",
-    "DESCRIPTION": "${modID}:神人 。对所有敌人造成 !D! 的 X + !M! 倍伤害。 NL 无论 ${modID}:检定 结果，丢弃所有手牌。"
+    "DESCRIPTION": "${modID}:神人 。对所有敌人造成 !D! 的 X + !M! 倍伤害。 NL 无论 ${modID}:检定 结果，随机丢弃 X 张牌。"
   },
   "${modID}:BrilliantAppearance": {
     "NAME": "看我闪亮登场！",
@@ -286,7 +286,8 @@
   },
   "${modID}:NinetyEight": {
     "NAME": "98分",
-    "DESCRIPTION": "投到 19 也可以触发 ${modID}:大成功 。 ${modID}:检定 ${modID}:大成功 时获得 !M! 层 敏捷 。"
+    "DESCRIPTION": " ${modID}:大成功 需要的点数减 !M! 。 ${modID}:检定 ${modID}:大成功 时获得 !M! 层 敏捷 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 ${modID}:大成功 需要的点数减 !M! 。 ${modID}:检定 ${modID}:大成功 时获得 !M! 层 敏捷 。"
   },
   "${modID}:PlusOne": {
     "NAME": "复读+1机",

@@ -4,7 +4,7 @@
     "FLAVOR": "20 dice for 20 magic.",
     "DESCRIPTIONS": [
       "At start of battle, gain ",
-      " #y${modID}:Magics. NL Card or relics with #y${modID}:Magic need a check( DC = #y${modID}:Magics ) to take effect. NL #yCritical #ySuccess makes double effect and #yCritical #yFailure makes u take #b6 damage."
+      " #y${modID}:Magics. NL Card or relics with #y${modID}:Magic need a check( DC = #y${modID}:Magics ) to take effect. NL #yCritical #ySuccess makes double effect."
     ]
   },
   "${modID}:GoodEating": {

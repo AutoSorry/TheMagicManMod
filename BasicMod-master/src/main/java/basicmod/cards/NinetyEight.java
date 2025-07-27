@@ -15,16 +15,15 @@ public class NinetyEight extends BaseCard{
             CardType.POWER,
             CardRarity.UNCOMMON,
             CardTarget.SELF,
-            0
+            1
     );
 
     private static final int MAGIC = 1;
-    private static final int UPG_MAGIC = 1;
 
     public NinetyEight() {
         super(ID, info);
 
-        setMagic(MAGIC, UPG_MAGIC);
+        setMagic(MAGIC);
         setInnate(false, true);
     }
 

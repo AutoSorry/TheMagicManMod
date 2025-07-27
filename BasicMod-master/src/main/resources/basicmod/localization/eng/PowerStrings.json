@@ -144,7 +144,7 @@
   "${modID}:NinetyEightPower": {
     "NAME": "98/100",
     "DESCRIPTIONS": [
-      "When check #yCritical #ySuccess, gain ", " Dexterity."
+      "#yCritical #ySuccess needs ", " less. When check #yCritical #ySuccess, gain ", " Dexterity."
     ]
   },
   "${modID}:Plus1": {

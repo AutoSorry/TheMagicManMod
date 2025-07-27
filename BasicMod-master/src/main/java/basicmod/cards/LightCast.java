@@ -24,7 +24,7 @@ public class LightCast extends BaseCard{
     );
 
     private static final int DAMAGE = 16;
-    private static final int MAGIC = 2;
+    private static final int MAGIC = 4;
     private static final int UPG_MAGIC = 4;
 
     public LightCast() {

@@ -154,7 +154,7 @@ public class MagicDice extends BaseRelic {
             magicResult = CheckResult.CRITICAL_FAILURE;
             resultTextIdx = 6;
             result = 1;
-        } else if (rs == 20 || (rs == 19 && p.hasPower(NinetyEightPower.POWER_ID))) {
+        } else if (rs == 20 || (p.hasPower(NinetyEightPower.POWER_ID) && rs >= 20 - p.getPower(NinetyEightPower.POWER_ID).amount)) {
             if (p.hasPower(Plus1.POWER_ID)) {
                 addToBot(new DrawCardAction(p, p.getPower(Plus1.POWER_ID).amount));
             }

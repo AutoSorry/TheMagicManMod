@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static java.lang.Math.min;
+
 public class Exactly extends BaseCard{
     public static final String ID = makeID("Exactly");
     private static final CardStats info = new CardStats(
@@ -19,8 +21,8 @@ public class Exactly extends BaseCard{
             1
     );
 
-    private static final int MAGIC = 2;
-    private static final int UPG_MAGIC = 1;
+    private static final int MAGIC = 3;
+    private static final int UPG_MAGIC = 2;
 
     public Exactly() {
         super(ID, info);
@@ -31,9 +33,7 @@ public class Exactly extends BaseCard{
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (p.getPower(Magics.POWER_ID).amount - magicNumber > 0) {
-            addToBot(new ReducePowerAction(p, p, Magics.POWER_ID, magicNumber));
-        }
+        addToBot(new ReducePowerAction(p, p, Magics.POWER_ID, min(p.getPower(Magics.POWER_ID).amount - 1, magicNumber)));
         addToBot(new DrawCardAction(p, 1));
     }
 

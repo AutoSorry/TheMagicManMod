@@ -4,7 +4,7 @@
     "FLAVOR": "二十面给神人的二十年。",
     "DESCRIPTIONS": [
       "战斗开始时，获得 ",
-      " 层 #y${modID}:神人值 。 NL 该遗物用于进行卡牌和遗物的 #y${modID}:检定 ， NL #y${modID}:大成功 使得效果翻倍； #y${modID}:大失败 使你受到 #b6 点伤害。"
+      " 层 #y${modID}:神人值 且 #y${modID}:神人值 不会低于 #b1 。 NL 该遗物用于进行卡牌和遗物的 #y${modID}:检定 ， NL 检定结果有：成功、失败、 #y${modID}:大成功 、 #y${modID}:大失败 。"
     ]
   },
   "${modID}:GoodEating": {

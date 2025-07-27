@@ -64,8 +64,7 @@ public class BrainDeadStrike extends BaseCard{
         if (!freeToPlayOnce) {
             p.energy.use(EnergyPanel.totalCount);
         }
-        int count = p.hand.size();
-        addToBot(new DiscardAction(p, p, count, false));
+        addToBot(new DiscardAction(p, p, effect, true));
     }
 
     @Override

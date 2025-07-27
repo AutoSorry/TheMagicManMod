@@ -144,7 +144,7 @@
   "${modID}:NinetyEightPower": {
     "NAME": "98/100",
     "DESCRIPTIONS": [
-      "检定大成功时，获得 ", " 层 敏捷 。"
+      "大成功需要的点数减 ", " 。 NL 检定大成功时，获得 ", " 层 敏捷 。"
     ]
   },
   "${modID}:Plus1": {
