@@ -15,6 +15,10 @@
     "NAME": "绩点打击",
     "DESCRIPTION": "造成 !D! 点伤害。如果目标的生命比例低于你，额外造成 !D! 伤害并获得 1 层 ${modID}:兴奋 ；否则，获得 1 层 ${modID}:低落 。"
   },
+  "${modID}:DDL": {
+    "NAME": "DDL",
+    "DESCRIPTION": "造成 !D! 点伤害。 向手牌中加入一张 *Rush 和一张 *借口 。"
+  },
   "${modID}:DeerCrash": {
     "NAME": "鹿人冲撞",
     "DESCRIPTION": "丢弃手中所有非攻击牌，每丢弃一张对所有敌人造成 !D! 点伤害。"
@@ -41,6 +45,10 @@
   "${modID}:LongSand": {
     "NAME": "很长的沙",
     "DESCRIPTION": "造成 !M! 次 !D! 点伤害。 NL 可以多次 升级 。"
+  },
+  "${modID}:LionAndTerritory": {
+    "NAME": "雄狮与领地",
+    "DESCRIPTION": "依次对所有敌人造成 !M! 次 !D! 点伤害。 每次造成伤害时，如果目标的意图为攻击，失去 1 点 力量 并获得 !B! 点 格挡 。"
   },
   "${modID}:LightCast": {
     "NAME": "光彩照人",
@@ -157,6 +165,10 @@
     "NAME": "神人导术",
     "DESCRIPTION": "获得 !B! 点格挡。在 1 回合内，你的 ${modID}:检定 获得 1d4 加值。"
   },
+  "${modID}:Holiday": {
+    "NAME": "假期",
+    "DESCRIPTION": "获得 !B! 点格挡。向手牌中加入一张 *借口 并将 ${modID}:神人值 重置为 10 。"
+  },
   "${modID}:JustRandomDeer": {
     "NAME": "纯鹿人",
     "DESCRIPTION": " 消耗 。获得 !M! 层 ${modID}:抵抗 。"
@@ -184,8 +196,8 @@
   },
   "${modID}:MagicFriend": {
     "NAME": "神人朋友",
-    "DESCRIPTION": " 消耗 。获得 !B! 点 格挡 或是将 1 张 *[/bangbangt] 洗入抽牌堆。在弃牌堆中加入此牌的 2 张复制品。",
-    "UPGRADE_DESCRIPTION": " 消耗 。获得 !B! 点 格挡 或是将 1 张 升级 过的 *[/bangbangt] 洗入抽牌堆。在弃牌堆中加入此牌的 2 张复制品。"
+    "DESCRIPTION": " 消耗 。获得 !B! 点 格挡 ，将 1 张 *[/bangbangt] 洗入抽牌堆。在弃牌堆中加入此牌的 2 张复制品。",
+    "UPGRADE_DESCRIPTION": " 消耗 。获得 !B! 点 格挡 ，将 1 张 升级 过的 *[/bangbangt] 洗入抽牌堆。在弃牌堆中加入此牌的 2 张复制品。"
   },
   "${modID}:Man": {
     "NAME": "man",
@@ -199,6 +211,11 @@
     "NAME": "神人传播学",
     "DESCRIPTION": " 消耗 。令目标每回合结束时进行一次 ${modID}:豁免检定 ，豁免失败则失去 1 点 力量 。",
     "UPGRADE_DESCRIPTION": "令目标每回合结束时进行一次 ${modID}:豁免检定 ，豁免失败则失去 1 点 力量 。"
+  },
+  "${modID}:MagicPotion": {
+    "NAME": "神人炼药",
+    "DESCRIPTION": " 消耗 。 ${modID}:神人 。获得 1 瓶药水。检定失败时将 1 张 *粘液 加入手牌。",
+    "UPGRADE_DESCRIPTION": " 消耗 。 ${modID}:神人 。获得 1 瓶药水。检定失败时将 1 张 *[/bb] 加入手牌。"
   },
   "${modID}:Niu": {
     "NAME": "牛",
@@ -220,6 +237,11 @@
   "${modID}:Reply": {
     "NAME": "回应",
     "DESCRIPTION": "随机将 !M! 张 升级 过的 ${modID}:表情 加入手牌。"
+  },
+  "${modID}:Reverse": {
+    "NAME": "倒装",
+    "DESCRIPTION": "将所有手牌置于抽牌堆顶并从弃牌堆中获取等量牌。",
+    "UPGRADE_DESCRIPTION": " 保留 。将所有手牌置于抽牌堆顶并从弃牌堆中获取等量牌。"
   },
   "${modID}:Rush": {
     "NAME": "Rush",
@@ -301,5 +323,10 @@
   "${modID}:WoodieMaster": {
     "NAME": "伍迪高手",
     "DESCRIPTION": "获得 !M! 层 力量 和 敏捷 。 NL 打击和防御耗能变为 0 并且打出后抽 1 张牌。"
+  },
+
+  "${modID}:Excuse": {
+    "NAME": "借口",
+    "DESCRIPTION": " 保留 。 不能被打出 。"
   }
 }

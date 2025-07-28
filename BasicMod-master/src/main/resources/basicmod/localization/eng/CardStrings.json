@@ -15,6 +15,10 @@
     "NAME": "Credit Strike",
     "DESCRIPTION": "Deal !D! damage. If the enemy's rate of health is lower, deal another !D! damage and gain 1 ${modID}:Happy; otherwise, gain 1 ${modID}:Sad."
   },
+  "${modID}:DDL": {
+    "NAME": "DDL",
+    "DESCRIPTION": "Deal !D! damage. Add a *Rush and an *Excuse to hand."
+  },
   "${modID}:DeerCrash": {
     "NAME": "Deer Crash",
     "DESCRIPTION": "Discard ALL non-Attack in hand, each deal !D! damage to ALL enemies."
@@ -41,6 +45,10 @@
   "${modID}:LongSand": {
     "NAME": "Long Sand",
     "DESCRIPTION": "Deal !D! damage !M! times. NL Can be upgraded many times."
+  },
+  "${modID}:LionAndTerritory": {
+    "NAME": "Lion And Territory",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies !M! times. If the target is intended to attack, lose 1 Strength and gain !B! Block each time."
   },
   "${modID}:LittleDrink": {
     "NAME": "Little Drink",
@@ -161,6 +169,10 @@
     "NAME": "Hit Magic",
     "DESCRIPTION": "Gain !B! Block. ${modID}:Check + 1d4 in 1 turn."
   },
+  "${modID}:Holiday": {
+    "NAME": "Holiday",
+    "DESCRIPTION": "Gain !B! Block. Add an *Excuse in hand and reset ${modID}:Magics to 10."
+  },
   "${modID}:JustRandomDeer": {
     "NAME": "Just Random Deer",
     "DESCRIPTION": "Exhausted. Gain !M! ${modID}:Resistance."
@@ -184,8 +196,13 @@
   },
   "${modID}:MagicFriend": {
     "NAME": "Magic Friend",
-    "DESCRIPTION": "Exhausted. Randomly gain !B! Block or add [/BangBangT] to draw pile. Add 2 copies to dicard pile.",
-    "UPGRADE_DESCRIPTION": "Exhausted. Randomly gain !B! Block or add upgraded [/BangBangT] to draw pile. Add 2 copies to dicard pile."
+    "DESCRIPTION": "Exhausted. Randomly gain !B! Block and add [/BangBangT] to draw pile. Add 2 copies to dicard pile.",
+    "UPGRADE_DESCRIPTION": "Exhausted. Randomly gain !B! Block and add upgraded [/BangBangT] to draw pile. Add 2 copies to dicard pile."
+  },
+  "${modID}:MagicPotion": {
+    "NAME": "Magic Potion",
+    "DESCRIPTION": "Exhausted. ${modID}:Magic. Obtain 1 potion. NL Failed -> Add *Slimed into hand.",
+    "UPGRADE_DESCRIPTION": "Exhausted. ${modID}:Magic. Obtain 1 potion. NL Failed -> Add *[/bb] into hand."
   },
   "${modID}:Man": {
     "NAME": "man",
@@ -220,6 +237,11 @@
   "${modID}:Reply": {
     "NAME": "Reply",
     "DESCRIPTION": "Randomly add !M! upgraded ${modID}:Emoji to hand."
+  },
+  "${modID}:Reverse": {
+    "NAME": "Reverse",
+    "DESCRIPTION": "Put ALL cards in hand to top of draw pile and get equal amount of cards from discard.",
+    "UPGRADE_DESCRIPTION": "Retain. Put ALL cards in hand to top of draw pile and get equal amount of cards from discard."
   },
   "${modID}:Rush": {
     "NAME": "Rush",
@@ -301,5 +323,10 @@
   "${modID}:WoodieMaster": {
     "NAME": "Woodie Master",
     "DESCRIPTION": "Gain !M! Strength and Dexterity. NL Free to play Starter Strike and Defend, draw 1 card after playing them."
+  },
+
+  "${modID}:Excuse": {
+    "NAME": "Excuse",
+    "DESCRIPTION": "Retain. Unplayable."
   }
 }

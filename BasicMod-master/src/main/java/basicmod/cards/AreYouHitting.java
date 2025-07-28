@@ -16,13 +16,12 @@ public class AreYouHitting extends BaseCard{
             CardType.SKILL,
             CardRarity.RARE,
             CardTarget.ENEMY,
-            3
+            2
     );
 
     public AreYouHitting() {
         super(ID, info);
-
-        setCostUpgrade(2);
+        
         setExhaust(true);
     }
 

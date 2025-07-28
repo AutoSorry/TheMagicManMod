@@ -21,8 +21,8 @@ public class MagicFriend extends BaseCard{
             1
     );
 
-    private static final int BLOCK = 12;
-    private static final int UPG_BLOCK = 4;
+    private static final int BLOCK = 10;
+    private static final int UPG_BLOCK = 3;
 
     public MagicFriend() {
         super(ID, info);
@@ -44,16 +44,12 @@ public class MagicFriend extends BaseCard{
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int r = random(0, 1);
-        if (r == 0) {
-            addToBot(new GainBlockAction(p, p, block));
-        } else {
-            AbstractCard c = new BangBangT();
-            if (upgraded) {
-                c.upgrade();
-            }
-            addToBot(new MakeTempCardInDrawPileAction(c, 1, true, true));
+        addToBot(new GainBlockAction(p, p, block));
+        AbstractCard c = new BangBangT();
+        if (upgraded) {
+            c.upgrade();
         }
+        addToBot(new MakeTempCardInDrawPileAction(c, 1, true, true));
         AbstractCard c1 = this.makeCopy();
         if (upgraded) {
             c1.upgrade();

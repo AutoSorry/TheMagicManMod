@@ -14,7 +14,7 @@ public class NotAnyEvent extends BaseCard{
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
             CardType.SKILL,
-            CardRarity.UNCOMMON,
+            CardRarity.COMMON,
             CardTarget.SELF,
             2
     );

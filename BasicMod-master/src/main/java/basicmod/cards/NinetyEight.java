@@ -13,9 +13,9 @@ public class NinetyEight extends BaseCard{
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
             CardType.POWER,
-            CardRarity.UNCOMMON,
+            CardRarity.RARE,
             CardTarget.SELF,
-            1
+            0
     );
 
     private static final int MAGIC = 1;
