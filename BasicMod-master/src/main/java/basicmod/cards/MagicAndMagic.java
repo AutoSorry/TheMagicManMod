@@ -20,7 +20,7 @@ public class MagicAndMagic extends BaseCard{
             1
     );
 
-    private static final int DAMAGE = 9;
+    private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
 
     public MagicAndMagic() {
@@ -34,16 +34,12 @@ public class MagicAndMagic extends BaseCard{
     public void use(AbstractPlayer p, AbstractMonster m) {
         MagicDice dice = (MagicDice) p.getRelic(MagicDice.ID);
         MagicDice.CheckResult res = dice.magicCheck();
-        int count = 1;
-        while (res == MagicDice.CheckResult.CRITICAL_SUCCESS || res == MagicDice.CheckResult.SUCCESS) {
-            if (res == MagicDice.CheckResult.SUCCESS) {
-                addToBot(new DamageAction(m, new DamageInfo(p, damage * count, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-            } else {
-                addToBot(new DamageAction(m, new DamageInfo(p, damage * count * 2, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-            }
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        if (res == MagicDice.CheckResult.SUCCESS) {
+            addToBot(new DamageAction(m, new DamageInfo(p, damage * 2, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));
             res = dice.magicCheck();
-            if (++count == 3) {
-                break;
+            if (res == MagicDice.CheckResult.SUCCESS) {
+                addToBot(new DamageAction(m, new DamageInfo(p, damage * 3, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
             }
         }
     }

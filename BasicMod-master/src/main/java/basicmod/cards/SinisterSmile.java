@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class SinisterSmile extends BaseCard{
@@ -16,12 +15,12 @@ public class SinisterSmile extends BaseCard{
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
             CardType.ATTACK,
-            CardRarity.UNCOMMON,
+            CardRarity.COMMON,
             CardTarget.ENEMY,
             1
     );
 
-    private static final int DAMAGE = 5;
+    private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
 
     public SinisterSmile() {

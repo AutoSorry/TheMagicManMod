@@ -26,13 +26,15 @@ public class NotToSay extends BaseCard{
         super(ID, info);
 
         setBlock(BLOCK, UPG_BLOCK);
+        setMagic(3);
 
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, p, block));
-        addToBot(new GainBlockAction(p, p, block));
+        for (int i = 0; i < magicNumber; i++) {
+            addToBot(new GainBlockAction(p, p, block));
+        }
         addToBot(new PressEndTurnButtonAction());
     }
 

@@ -33,9 +33,7 @@ public class CheckCheck extends BaseCard{
     public void use(AbstractPlayer p, AbstractMonster m) {
         MagicDice dice = (MagicDice) p.getRelic(MagicDice.ID);
         MagicDice.CheckResult res = dice.magicCheck();
-        if (res == MagicDice.CheckResult.CRITICAL_SUCCESS) {
-            addToBot(new GainEnergyAction(magicNumber * 2));
-        } else if (res == MagicDice.CheckResult.SUCCESS) {
+        if (res == MagicDice.CheckResult.SUCCESS) {
             addToBot(new GainEnergyAction(magicNumber));
         }
     }

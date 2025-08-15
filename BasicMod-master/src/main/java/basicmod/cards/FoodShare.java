@@ -20,10 +20,10 @@ public class FoodShare extends BaseCard{
             CardType.ATTACK,
             CardRarity.RARE,
             CardTarget.ENEMY,
-            1
+            2
     );
 
-    private static final int MAGIC = 6;
+    private static final int MAGIC = 4;
     private static final int UPGRADE_MAGIC = 2;
 
     public FoodShare() {
@@ -41,11 +41,6 @@ public class FoodShare extends BaseCard{
             for (int i = 0; i < magicNumber; i++) {
                 addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
             }
-
-        } else if (res == MagicDice.CheckResult.CRITICAL_SUCCESS){
-            for (int i = 0; i < magicNumber; i++) {
-                addToBot(new DamageAction(m, new DamageInfo(p, damage * 2, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-            }
         } else {
             int loseMagics = -((magics + 1) / 2);
             addToBot(new ApplyPowerAction(p, p, new Magics(p, loseMagics)));
@@ -54,7 +49,7 @@ public class FoodShare extends BaseCard{
 
     public void applyPowers() {
 
-        int magics = AbstractDungeon.player.getPower(Magics.POWER_ID).amount / 2;
+        int magics = AbstractDungeon.player.getPower(Magics.POWER_ID).amount;
         if (magics > 0) {
             baseDamage = magics;
             super.applyPowers();

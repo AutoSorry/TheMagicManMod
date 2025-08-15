@@ -32,13 +32,12 @@ public class MagicDefend extends BaseCard{
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new GainBlockAction(p, p, block));
         MagicDice dice = (MagicDice) p.getRelic(MagicDice.ID);
         MagicDice.CheckResult res = dice.magicCheck();
         int magics = p.getPower(Magics.POWER_ID).amount;
-        if (res == MagicDice.CheckResult.CRITICAL_SUCCESS) {
-            addToBot(new GainBlockAction(p, p, (block + magics) * 2));
-        } else if (res == MagicDice.CheckResult.SUCCESS) {
-            addToBot(new GainBlockAction(p, p, block + magics));
+        if (res == MagicDice.CheckResult.SUCCESS) {
+            addToBot(new GainBlockAction(p, p, magics));
         }
     }
 

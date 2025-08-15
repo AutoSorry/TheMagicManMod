@@ -27,13 +27,17 @@ public class AreYouHitting extends BaseCard{
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (m.getIntentBaseDmg() >= 0) {
+
+        AbstractCard c = new ImHittingHard();
+        if (upgraded) {
+            c.upgrade();
             addToBot(new ApplyPowerAction(m, p, new StunMonsterPower(m, 1)));
-            AbstractCard c = new ImHittingHard();
-            if (upgraded) {
-                c.upgrade();
-            }
             addToBot(new MakeTempCardInHandAction(c, 1));
+        } else {
+            if (m.getIntentBaseDmg() >= 0) {
+                addToBot(new ApplyPowerAction(m, p, new StunMonsterPower(m, 1)));
+                addToBot(new MakeTempCardInHandAction(c, 1));
+            }
         }
     }
 

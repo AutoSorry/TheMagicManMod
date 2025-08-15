@@ -16,22 +16,22 @@ public class HitMagic extends BaseCard{
             CardType.SKILL,
             CardRarity.UNCOMMON,
             CardTarget.SELF,
-            1
+            0
     );
 
-    private static final int BLOCK = 7;
-    private static final int UPG_BLOCK = 3;
+    private static final int MAGIC = 2;
+    private static final int UPG_MAGIC = 1;
 
     public HitMagic() {
         super(ID, info);
 
-        setBlock(BLOCK, UPG_BLOCK);
+        setMagic(MAGIC, UPG_MAGIC);
+        setExhaust(true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, block));
-        addToBot(new ApplyPowerAction(p, p, new HitPower(p, 1)));
+        addToBot(new ApplyPowerAction(p, p, new HitPower(p, magicNumber)));
     }
 
     @Override

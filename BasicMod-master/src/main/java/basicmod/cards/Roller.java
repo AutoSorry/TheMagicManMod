@@ -28,14 +28,13 @@ public class Roller extends BaseCard{
         super(ID, info);
 
         setMagic(MAGIC, UPG_MAGIC);
-
+        cardsToPreview = new VoidCard();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DrawCardAction(p, magicNumber));
         addToBot(new MakeTempCardInDiscardAction(new VoidCard(), 1));
-        addToBot(new MakeTempCardInDrawPileAction(new Dazed(), 1, true, true));
     }
 
     @Override

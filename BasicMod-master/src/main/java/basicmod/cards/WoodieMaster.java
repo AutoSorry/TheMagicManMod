@@ -23,7 +23,7 @@ public class WoodieMaster extends BaseCard{
     public WoodieMaster() {
         super(ID, info);
 
-        setMagic(1, 1);
+        setMagic(2, 1);
 
     }
 
@@ -32,7 +32,7 @@ public class WoodieMaster extends BaseCard{
         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber)));
         addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, magicNumber)));
         if (!p.hasPower(WoodiePower.POWER_ID)) {
-            addToBot(new ApplyPowerAction(p, p, new WoodiePower(p, 1)));
+            addToBot(new ApplyPowerAction(p, p, new WoodiePower(p, magicNumber)));
         }
         for (AbstractCard c : p.hand.group) {
             if (c.hasTag(CardTags.STARTER_STRIKE) || c.hasTag(CardTags.STARTER_DEFEND)) {

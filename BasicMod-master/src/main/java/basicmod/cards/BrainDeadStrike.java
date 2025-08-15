@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
+import com.megacrit.cardcrawl.actions.utility.LoseBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -20,8 +21,8 @@ public class BrainDeadStrike extends BaseCard{
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
             CardType.ATTACK,
-            CardRarity.COMMON,
-            CardTarget.ALL_ENEMY,
+            CardRarity.UNCOMMON,
+            CardTarget.ENEMY,
             -1
     );
 
@@ -52,19 +53,17 @@ public class BrainDeadStrike extends BaseCard{
             p.getRelic("Chemical X").flash();
         }
         effect += magicNumber;
-        if (res == MagicDice.CheckResult.CRITICAL_SUCCESS) {
-            for (AbstractMonster monster: AbstractDungeon.getMonsters().monsters) {
-                addToBot(new DamageAction(monster, new DamageInfo(p, damage * effect * 2, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-            }
-        } else if (res == MagicDice.CheckResult.SUCCESS) {
-            for (AbstractMonster monster: AbstractDungeon.getMonsters().monsters) {
-                addToBot(new DamageAction(monster, new DamageInfo(p, damage * effect, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-            }
+        for (int i = 0; i < effect; i++) {
+            addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        }
+        if (res == MagicDice.CheckResult.SUCCESS) {
+            addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        } else {
+            addToBot(new DiscardAction(p, p, effect, true));
         }
         if (!freeToPlayOnce) {
             p.energy.use(EnergyPanel.totalCount);
         }
-        addToBot(new DiscardAction(p, p, effect, true));
     }
 
     @Override

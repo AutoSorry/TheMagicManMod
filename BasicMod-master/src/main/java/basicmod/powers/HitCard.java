@@ -33,7 +33,7 @@ public class HitCard extends BasePower{
                 addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, amount)));
                 break;
             } case 2: {
-                addToBot(new ApplyPowerAction(p, p, new Magics(p, amount)));
+                addToBot(new ApplyPowerAction(p, p, new HappyPower(p, amount)));
                 break;
             }
         }

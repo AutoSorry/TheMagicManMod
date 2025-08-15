@@ -43,9 +43,8 @@ public class GoodMorning extends BaseCard{
         }
         for (int i = 0; i < count; i++) {
             addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-            addToBot(new GainEnergyAction(1));
         }
-
+        addToBot(new GainEnergyAction(count));
     }
 
     public void applyPowers() {

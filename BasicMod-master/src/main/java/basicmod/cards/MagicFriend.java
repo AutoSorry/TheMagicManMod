@@ -3,13 +3,11 @@ package basicmod.cards;
 import basicmod.character.MyCharacter;
 import basicmod.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
-import static com.badlogic.gdx.math.MathUtils.random;
 
 public class MagicFriend extends BaseCard{
     public static final String ID = makeID("MagicFriend");
@@ -54,7 +52,7 @@ public class MagicFriend extends BaseCard{
         if (upgraded) {
             c1.upgrade();
         }
-        addToBot(new MakeTempCardInDiscardAction(c1, 2));
+        addToBot(new MakeTempCardInHandAction(c1, 2));
     }
 
     @Override

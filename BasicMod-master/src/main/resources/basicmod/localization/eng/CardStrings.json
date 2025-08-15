@@ -5,11 +5,11 @@
   },
   "${modID}:BrainDeadStrike": {
     "NAME": "Brain-dead Strike",
-    "DESCRIPTION": "${modID}:Magic. Deal X + !M! times of !D! damage to ALL enemies. NL Always -> Randomly discard X cards."
+    "DESCRIPTION": "Deal !D! damage X + !M! times. NL ${modID}:Magic: work 1 extra time || randomly discard X cards."
   },
   "${modID}:BrilliantAppearance": {
     "NAME": "Brilliant Appearance!",
-    "DESCRIPTION": "Innate. Exhausted. ${modID}:Magic. Deal !D! damage to ALL enemies. Gain !M! ${modID}:Magics. NL Failed -> Gain double ${modID}:Magics."
+    "DESCRIPTION": "Innate. Exhausted. Deal !D! damage to ALL enemies. NL ${modID}:Magic: gain !M! ${modID}:Happy || gain !M! ${modID}:Magics."
   },
   "${modID}:CreditStrike": {
     "NAME": "Credit Strike",
@@ -29,7 +29,7 @@
   },
   "${modID}:FoodShare": {
     "NAME": "Food Share",
-    "DESCRIPTION": "${modID}:Magic. Deal half of ${modID}:Magics amount of damage !M! times. NL Failed -> Lose half of the ${modID}:Magics.",
+    "DESCRIPTION": "${modID}:Magic: deal damage as much as ${modID}:Magics !M! times || lose half of the ${modID}:Magics.",
     "EXTENDED_DESCRIPTION": [" NL (Deal !D! damage !M! times.)"]
   },
   "${modID}:GoodMorning": {
@@ -39,8 +39,8 @@
   },
   "${modID}:ImHittingHard": {
     "NAME": "I'm Hitting Hard",
-    "DESCRIPTION": "Exhausted. Deal !D! damage. Apply !M! Vulnerable. Add Are You Hitting? to hand.",
-    "UPGRADE_DESCRIPTION": "Exhausted. Deal !D! damage. Apply !M! Vulnerable. Add upgraded Are You Hitting? to hand."
+    "DESCRIPTION": "Exhausted. Deal !D! damage. Add Are You Hitting? to hand.",
+    "UPGRADE_DESCRIPTION": "Exhausted. Deal !D! damage. Add upgraded Are You Hitting? to hand."
   },
   "${modID}:LongSand": {
     "NAME": "Long Sand",
@@ -60,13 +60,13 @@
   },
   "${modID}:MagicStrike": {
     "NAME": "Magic Strike",
-    "DESCRIPTION": "${modID}:Magic. Deal ${modID}:Magics damage.",
-    "UPGRADE_DESCRIPTION": "${modID}:Magic. Deal ${modID}:Magics damage. NL This ${modID}:check obtains ${modID}:Advantage",
+    "DESCRIPTION": "${modID}:Magic: deal ${modID}:Magics damage || None.",
+    "UPGRADE_DESCRIPTION": "${modID}:Magic: deal ${modID}:Magics damage || None. NL This ${modID}:check obtains ${modID}:Advantage",
     "EXTENDED_DESCRIPTION": [" NL (Deal !D! damage.)"]
   },
   "${modID}:MagicAndMagic": {
     "NAME": "Magic and Magic",
-    "DESCRIPTION": "${modID}:Magic. Deal !D! damage. Success -> Take another ${modID}:check to deal double damage."
+    "DESCRIPTION": "Deal !D! damage. NL ${modID}:Magic: (deal extra double damage, ${modID}:Magic: deal extra triple damage || None) || None."
   },
   "${modID}:Nia": {
     "NAME": "nia",
@@ -74,7 +74,7 @@
   },
   "${modID}:RandomSpeaking": {
     "NAME": "Random Speaking",
-    "DESCRIPTION": "Deal !D! damage and 1d!M! HP loss. Gain 1d!M! ${modID}:Magics."
+    "DESCRIPTION": "Deal !D! damage. Gain 1d!M! ${modID}:Happy and 1d!M! ${modID}:Magics."
   },
   "${modID}:RushRush": {
     "NAME": "Rush Rush",
@@ -90,7 +90,7 @@
   },
   "${modID}:SteamStart": {
     "NAME": "Steam Start",
-    "DESCRIPTION": "Innate. Ethereal. Exhausted. ${modID}:Magic. Deal !D! damage. Failed -> Deal !D! damage to ALL enemies 7 turns later."
+    "DESCRIPTION": "Innate. Ethereal. Exhausted. ${modID}:Magic: deal !D! damage || deal !D! damage to ALL enemies 7 turns later."
   },
   "${modID}:Strike": {
     "NAME": "Strike",
@@ -102,7 +102,7 @@
   },
   "${modID}:ThisBombBro": {
     "NAME": "This Bomb, bro!",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies X times. Add a copy to hand next X turns."
+    "DESCRIPTION": "Exhausted. Deal !D! damage to ALL enemies X times. Add a copy to hand next X turns."
   },
   "${modID}:TrueAlgorismGod": {
     "NAME": "True Algorism God",
@@ -121,7 +121,7 @@
   "${modID}:AreYouHitting": {
     "NAME": "Are You Hitting?",
     "DESCRIPTION": "Exhausted. If the enemy is intended to attack, Stun it and add I'm Hitting Hard to hand.",
-    "UPGRADE_DESCRIPTION": "Exhausted. If the enemy is intended to attack, Stun it and add upgraded I'm Hitting Hard to hand."
+    "UPGRADE_DESCRIPTION": "Exhausted. Stun an enemy and add upgraded I'm Hitting Hard to hand."
   },
   "${modID}:Bb": {
     "NAME": "[/bb]",
@@ -137,7 +137,7 @@
   },
   "${modID}:CheckCheck": {
     "NAME": "Check Check",
-    "DESCRIPTION": "${modID}:Magic. Gain !M! [E]."
+    "DESCRIPTION": "${modID}:Magic: Gain !M! [E] || None."
   },
   "${modID}:Defend": {
     "NAME": "Defend",
@@ -167,7 +167,7 @@
   },
   "${modID}:HitMagic": {
     "NAME": "Hit Magic",
-    "DESCRIPTION": "Gain !B! Block. ${modID}:Check + 1d4 in 1 turn."
+    "DESCRIPTION": "${modID}:Check + 1d4 in !M! turns."
   },
   "${modID}:Holiday": {
     "NAME": "Holiday",
@@ -188,21 +188,21 @@
   },
   "${modID}:MagicBigMove": {
     "NAME": "Magic Big Move",
-    "DESCRIPTION": "Exhausted. ${modID}:Magic. Apply !M! Vulnerable and Weak to ALL enemies. NL Failed -> Add !M! [/Bb] to hand."
+    "DESCRIPTION": "Exhausted. ${modID}:Magic: apply !M! Vulnerable and Weak to ALL enemies || add !M! [/Bb] to hand."
   },
   "${modID}:MagicDefend": {
     "NAME": "Magic Defend",
-    "DESCRIPTION": "${modID}:Magic. Gain ${modID}:Magics + !B! Block."
+    "DESCRIPTION": "Gain !B! Block. ${modID}:Magic: gain Block as much as ${modID}:Magics || None."
   },
   "${modID}:MagicFriend": {
     "NAME": "Magic Friend",
-    "DESCRIPTION": "Exhausted. Randomly gain !B! Block and add [/BangBangT] to draw pile. Add 2 copies to dicard pile.",
-    "UPGRADE_DESCRIPTION": "Exhausted. Randomly gain !B! Block and add upgraded [/BangBangT] to draw pile. Add 2 copies to dicard pile."
+    "DESCRIPTION": "Exhausted. Randomly gain !B! Block and add [/BangBangT] to draw pile. Add 2 copies to hand.",
+    "UPGRADE_DESCRIPTION": "Exhausted. Randomly gain !B! Block and add upgraded [/BangBangT] to draw pile. Add 2 copies to hand."
   },
   "${modID}:MagicPotion": {
     "NAME": "Magic Potion",
-    "DESCRIPTION": "Exhausted. ${modID}:Magic. Obtain 1 potion. NL Failed -> Add *Slimed into hand.",
-    "UPGRADE_DESCRIPTION": "Exhausted. ${modID}:Magic. Obtain 1 potion. NL Failed -> Add *[/bb] into hand."
+    "DESCRIPTION": "Exhausted. ${modID}:Magic: obtain 1 potion || add *Slimed into hand.",
+    "UPGRADE_DESCRIPTION": "Exhausted. ${modID}:Magic: obtain 1 potion || add *[/bb] into hand."
   },
   "${modID}:Man": {
     "NAME": "man",
@@ -210,7 +210,7 @@
   },
   "${modID}:MilkDragonCry": {
     "NAME": "Milk-dragon Cry",
-    "DESCRIPTION": " ${modID}:Magic. Gain !B! Block. NL Failed -> Still gain half of the Block. NL Return to hand from discard pile when taken damage."
+    "DESCRIPTION": " ${modID}:Magic: gain !B! Block || gain half of !B! Block. NL Return to hand from discard pile when taken damage."
   },
   "${modID}:MagicSpread": {
     "NAME": "Magic Spread",
@@ -228,7 +228,7 @@
   },
   "${modID}:NotToSay": {
     "NAME": "Nothing to Say",
-    "DESCRIPTION": "Gain !B! Block twice. End your turn."
+    "DESCRIPTION": "Gain !B! Block !M! times. End your turn."
   },
   "${modID}:Ohno": {
     "NAME": "ohno",
@@ -249,7 +249,7 @@
   },
   "${modID}:Roller": {
     "NAME": "Roller",
-    "DESCRIPTION": "Draw !M! cards. Add 1 Void to discard and 1 Dazed to draw pile."
+    "DESCRIPTION": "Draw !M! cards. Add 1 Void to discard."
   },
   "${modID}:SoHandsomeBro": {
     "NAME": "So Handsome, bro!",
@@ -271,7 +271,7 @@
   },
   "${modID}:YouAreAttackGod": {
     "NAME": "You Are Attack God!",
-    "DESCRIPTION": "${modID}:Magic. If an enemy is intended to attack, prevent the next !M! times you would lose health. NL Failed -> Gain 1 Vulnerable."
+    "DESCRIPTION": "If an enemy is intended to attack, ${modID}:Magic: prevent the next !M! times you would lose health || gain 1 Vulnerable."
   },
   "${modID}:Yx": {
     "NAME": "[/yx]",
@@ -292,7 +292,7 @@
   },
   "${modID}:HitCardMan": {
     "NAME": "Hit Card Man",
-    "DESCRIPTION": "At start of turn, randomly gain !M! Strength or Dexterity or ${modID}:Magics."
+    "DESCRIPTION": "At start of turn, randomly gain !M! Strength or Dexterity or ${modID}:Happy."
   },
   "${modID}:LifeFlavor": {
     "NAME": "Life Flavor",
@@ -322,11 +322,11 @@
   },
   "${modID}:WoodieMaster": {
     "NAME": "Woodie Master",
-    "DESCRIPTION": "Gain !M! Strength and Dexterity. NL Free to play Starter Strike and Defend, draw 1 card after playing them."
+    "DESCRIPTION": "Gain !M! Strength and Dexterity. NL In !M! turns, free to play Starter Strike and Defend, draw 1 card after playing them."
   },
 
   "${modID}:Excuse": {
     "NAME": "Excuse",
-    "DESCRIPTION": "Retain. Unplayable."
+    "DESCRIPTION": "Retain. Unplayable. NL Whenever playing a card, gain 1 ${modID}:Magics if it is in hand."
   }
 }

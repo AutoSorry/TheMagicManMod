@@ -1,6 +1,7 @@
 package basicmod.powers;
 
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -30,6 +31,11 @@ public class WoodiePower extends BasePower{
         if (card.hasTag(AbstractCard.CardTags.STARTER_STRIKE) || card.hasTag(AbstractCard.CardTags.STARTER_DEFEND)) {
             addToBot(new DrawCardAction(AbstractDungeon.player, 1));
         }
+    }
+
+    @Override
+    public void atStartOfTurn() {
+        addToBot(new ReducePowerAction(AbstractDungeon.player, AbstractDungeon.player, this, 1));
     }
 
     @Override

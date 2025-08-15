@@ -5,11 +5,11 @@
   },
   "${modID}:BrainDeadStrike": {
     "NAME": "无脑打击",
-    "DESCRIPTION": "${modID}:神人 。对所有敌人造成 !D! 的 X + !M! 倍伤害。 NL 无论 ${modID}:检定 结果，随机丢弃 X 张牌。"
+    "DESCRIPTION": "造成 !D! 点伤害 X + !M! 次。 NL ${modID}:神人 ：额外生效一次 | 随机丢弃 X 张牌。"
   },
   "${modID}:BrilliantAppearance": {
     "NAME": "看我闪亮登场！",
-    "DESCRIPTION": " 固有 。 消耗 。 ${modID}:神人 。 对所有敌人造成 !D! 点伤害。 增加 !M! 层 ${modID}:神人值 。 NL ${modID}:检定 失败时，增加两倍的 ${modID}:神人值 。"
+    "DESCRIPTION": " 固有 。 消耗 。对所有敌人造成 !D! 点伤害。 NL ${modID}:神人 ：获得 !M! 层 ${modID}:兴奋 | 增加 !M! 层 ${modID}:神人值 。"
   },
   "${modID}:CreditStrike": {
     "NAME": "绩点打击",
@@ -29,7 +29,7 @@
   },
   "${modID}:FoodShare": {
     "NAME": "搬搬史",
-    "DESCRIPTION": "${modID}:神人 。造成 !M! 次相当于 ${modID}:神人值 一半的伤害。 NL ${modID}:检定 失败时，减少一半 ${modID}:神人值 。",
+    "DESCRIPTION": "${modID}:神人 ：造成 !M! 次等同于 ${modID}:神人值 的伤害 | 减少一半 ${modID}:神人值 。",
     "EXTENDED_DESCRIPTION": [" NL (造成 !M! 次 !D! 点伤害。)"]
   },
   "${modID}:GoodMorning": {
@@ -39,8 +39,8 @@
   },
   "${modID}:ImHittingHard": {
     "NAME": "我在开打哦",
-    "DESCRIPTION": " 消耗 。造成 !D! 点伤害。给予 !M! 层 易伤 。将 *你在开打吗 加入手牌。",
-    "UPGRADE_DESCRIPTION": " 消耗 。造成 !D! 点伤害。给予 !M! 层 易伤 。将 升级 后的 *你在开打吗 加入手牌。"
+    "DESCRIPTION": " 消耗 。造成 !D! 点伤害。将 *你在开打吗 加入手牌。",
+    "UPGRADE_DESCRIPTION": " 消耗 。造成 !D! 点伤害。将 升级 后的 *你在开打吗 加入手牌。"
   },
   "${modID}:LongSand": {
     "NAME": "很长的沙",
@@ -56,13 +56,13 @@
   },
   "${modID}:MagicStrike": {
     "NAME": "神人打击",
-    "DESCRIPTION": " ${modID}:神人 。造成相当于 ${modID}:神人值 的伤害。",
-    "UPGRADE_DESCRIPTION": " ${modID}:神人 。造成相当于 ${modID}:神人值 的伤害 NL 本次 ${modID}:检定 获得 ${modID}:优势 。",
+    "DESCRIPTION": " ${modID}:神人 ：造成相当于 ${modID}:神人值 的伤害 | 无事发生。",
+    "UPGRADE_DESCRIPTION": " ${modID}:神人 ：造成相当于 ${modID}:神人值 的伤害 | 无事发生。 NL 本次 ${modID}:检定 获得 ${modID}:优势 。",
     "EXTENDED_DESCRIPTION": [" NL (造成 !D! 点伤害。)"]
   },
   "${modID}:MagicAndMagic": {
     "NAME": "神人中的神人",
-    "DESCRIPTION": "${modID}:神人 。造成 !D! 点伤害。 ${modID}:检定 成功时再进行一次 ${modID}:检定 ，成功则额外造成两倍伤害。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL ${modID}:神人 ：（额外造成 2 倍伤害， ${modID}:神人 ：额外造成 3 倍伤害 | 无事发生） | 无事发生。"
   },
   "${modID}:Nia": {
     "NAME": "nia",
@@ -70,7 +70,7 @@
   },
   "${modID}:RandomSpeaking": {
     "NAME": "随机说话",
-    "DESCRIPTION": "造成 !D! 点伤害和 1d!M!的生命流失。增加 1d!M! 点 ${modID}:神人值 。"
+    "DESCRIPTION": "造成 !D! 点伤害。获得 1!M! 点 ${modID}:兴奋 和 1d!M! 点 ${modID}:神人值 。"
   },
   "${modID}:RushRush": {
     "NAME": "Rush Rush",
@@ -86,7 +86,7 @@
   },
   "${modID}:SteamStart": {
     "NAME": "蒸汽启动中",
-    "DESCRIPTION": " 固有 。 虚无 。 消耗 。 ${modID}:神人 。造成 !D! 点伤害。检定失败时，在 7 回合后对所有敌人造成 !D! 点伤害。"
+    "DESCRIPTION": " 固有 。 虚无 。 消耗 。 ${modID}:神人 ：造成 !D! 点伤害 | 在 7 回合后对所有敌人造成 !D! 点伤害。"
   },
   "${modID}:Strike": {
     "NAME": "打击",
@@ -98,7 +98,7 @@
   },
   "${modID}:ThisBombBro": {
     "NAME": "这不就炸了吗，兄弟",
-    "DESCRIPTION": "对所有敌人造成 X 次 !D! 点伤害。在之后的 X 回合将这张牌的复制品加入手牌。"
+    "DESCRIPTION": " 消耗 。对所有敌人造成 X 次 !D! 点伤害。在之后的 X 回合将这张牌的复制品加入手牌。"
   },
   "${modID}:TrueAlgorismGod": {
     "NAME": "真的算法大神",
@@ -117,7 +117,7 @@
   "${modID}:AreYouHitting": {
     "NAME": "你在开打吗",
     "DESCRIPTION": " 消耗 。如果目标的意图为攻击，击晕它并将一张 *我在开打哦 加入手牌。",
-    "UPGRADE_DESCRIPTION": " 消耗 。如果目标的意图为攻击，击晕它并将一张 升级 后的 *我在开打哦 加入手牌。"
+    "UPGRADE_DESCRIPTION": " 消耗 。击晕一个敌人并将一张 升级 后的 *我在开打哦 加入手牌。"
   },
   "${modID}:Bb": {
     "NAME": "[/bb]",
@@ -133,7 +133,7 @@
   },
   "${modID}:CheckCheck": {
     "NAME": "让我切克切克",
-    "DESCRIPTION": " ${modID}:神人 。获得 !M! 点 [E] 。"
+    "DESCRIPTION": " ${modID}:神人 ：获得 !M! 点 [E] | 无事发生。"
   },
   "${modID}:Defend": {
     "NAME": "防御",
@@ -163,7 +163,7 @@
   },
   "${modID}:HitMagic": {
     "NAME": "神人导术",
-    "DESCRIPTION": "获得 !B! 点格挡。在 1 回合内，你的 ${modID}:检定 获得 1d4 加值。"
+    "DESCRIPTION": "在 !M! 回合内，你的 ${modID}:检定 获得 1d4 加值。"
   },
   "${modID}:Holiday": {
     "NAME": "假期",
@@ -188,16 +188,16 @@
   },
   "${modID}:MagicBigMove": {
     "NAME": "神人开大",
-    "DESCRIPTION": " 消耗 。 ${modID}:神人 。给予所有敌人 !M! 层 易伤 和 虚弱 。 ${modID}:检定 失败时，将 !M! 张 *[/bb] 加入手牌。"
+    "DESCRIPTION": " 消耗 。 ${modID}:神人 ：给予所有敌人 !M! 层 易伤 和 虚弱 | 将 !M! 张 *[/bb] 加入手牌。"
   },
   "${modID}:MagicDefend": {
     "NAME": "神人防御",
-    "DESCRIPTION": " ${modID}:神人 。获得 ${modID}:神人值 + !B! 点 格挡 。"
+    "DESCRIPTION": "获得 !B! 点 格挡。 ${modID}:神人 ：获得 ${modID}:神人值 点 格挡 | 无事发生。"
   },
   "${modID}:MagicFriend": {
     "NAME": "神人朋友",
-    "DESCRIPTION": " 消耗 。获得 !B! 点 格挡 ，将 1 张 *[/bangbangt] 洗入抽牌堆。在弃牌堆中加入此牌的 2 张复制品。",
-    "UPGRADE_DESCRIPTION": " 消耗 。获得 !B! 点 格挡 ，将 1 张 升级 过的 *[/bangbangt] 洗入抽牌堆。在弃牌堆中加入此牌的 2 张复制品。"
+    "DESCRIPTION": " 消耗 。获得 !B! 点 格挡 ，将 1 张 *[/bangbangt] 洗入抽牌堆。在手牌中加入此牌的 2 张复制品。",
+    "UPGRADE_DESCRIPTION": " 消耗 。获得 !B! 点 格挡 ，将 1 张 升级 过的 *[/bangbangt] 洗入抽牌堆。在手牌中加入此牌的 2 张复制品。"
   },
   "${modID}:Man": {
     "NAME": "man",
@@ -205,7 +205,7 @@
   },
   "${modID}:MilkDragonCry": {
     "NAME": "奶龙哭泣",
-    "DESCRIPTION": " ${modID}:神人 。获得 !B! 格挡 。 NL ${modID}:检定 失败时仍然获得一半的 格挡 。 NL 受到伤害时从弃牌堆返回手中。"
+    "DESCRIPTION": " ${modID}:神人 ：获得 !B! 点 格挡 | 获得 !B!/2 点 格挡 。 NL 受到伤害时从弃牌堆返回手中。"
   },
   "${modID}:MagicSpread": {
     "NAME": "神人传播学",
@@ -214,8 +214,8 @@
   },
   "${modID}:MagicPotion": {
     "NAME": "神人炼药",
-    "DESCRIPTION": " 消耗 。 ${modID}:神人 。获得 1 瓶药水。检定失败时将 1 张 *粘液 加入手牌。",
-    "UPGRADE_DESCRIPTION": " 消耗 。 ${modID}:神人 。获得 1 瓶药水。检定失败时将 1 张 *[/bb] 加入手牌。"
+    "DESCRIPTION": " 消耗 。 ${modID}:神人 ：获得 1 瓶药水 | 将 1 张 *粘液 加入手牌。",
+    "UPGRADE_DESCRIPTION": " 消耗 。 ${modID}:神人 ：获得 1 瓶药水 | 将 1 张 *[/bb] 加入手牌。"
   },
   "${modID}:Niu": {
     "NAME": "牛",
@@ -228,7 +228,7 @@
   },
   "${modID}:NotToSay": {
     "NAME": "无语",
-    "DESCRIPTION": "获得两次 !B! 点 格挡 。结束你的回合。"
+    "DESCRIPTION": "获得 !M! 次 !B! 点 格挡 。结束你的回合。"
   },
   "${modID}:Ohno": {
     "NAME": "ohno",
@@ -249,7 +249,7 @@
   },
   "${modID}:Roller": {
     "NAME": "卷怪",
-    "DESCRIPTION": "抽 !M! 张牌。将 1 张 *虚空 加入弃牌堆，将 1 张 *晕眩 加入抽牌堆。"
+    "DESCRIPTION": "抽 !M! 张牌。将 1 张 *虚空 加入弃牌堆。"
   },
   "${modID}:SoHandsomeBro": {
     "NAME": "So Handsome, bro!",
@@ -271,7 +271,7 @@
   },
   "${modID}:YouAreAttackGod": {
     "NAME": "你是攻击领域大神",
-    "DESCRIPTION": " ${modID}:神人 。如果敌人的意图为攻击，阻止下 !M! 次你受到的生命值损伤。 NL 检定失败时给予自己 1 层 易伤 。"
+    "DESCRIPTION": "如果敌人的意图为攻击， ${modID}:神人 ：阻止下 !M! 次你受到的生命值损伤 | 给予自己 1 层 易伤 。"
   },
   "${modID}:Yx": {
     "NAME": "[/yx]",
@@ -292,7 +292,7 @@
   },
   "${modID}:HitCardMan": {
     "NAME": "打卡仙人",
-    "DESCRIPTION": "回合开始时，随机增加 !M! 层 力量 或 敏捷 或 ${modID}:神人值 。"
+    "DESCRIPTION": "回合开始时，随机增加 !M! 层 力量 或 敏捷 或 ${modID}:兴奋 。"
   },
   "${modID}:LifeFlavor": {
     "NAME": "那很有生活气息了",
@@ -322,11 +322,11 @@
   },
   "${modID}:WoodieMaster": {
     "NAME": "伍迪高手",
-    "DESCRIPTION": "获得 !M! 层 力量 和 敏捷 。 NL 打击和防御耗能变为 0 并且打出后抽 1 张牌。"
+    "DESCRIPTION": "获得 !M! 层 力量 和 敏捷 。 NL 在 !M! 回合内，打击和防御耗能变为 0 并且打出后抽 1 张牌。"
   },
 
   "${modID}:Excuse": {
     "NAME": "借口",
-    "DESCRIPTION": " 保留 。 不能被打出 。"
+    "DESCRIPTION": " 保留 。 不能被打出 。 NL 在手牌中时，每打出一张牌增加 1 点 ${modID}:神人值 。"
   }
 }

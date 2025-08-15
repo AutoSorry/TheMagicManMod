@@ -37,9 +37,7 @@ public class YouAreAttackGod extends BaseCard{
         if (m.getIntentBaseDmg() >= 0) {
             MagicDice dice = (MagicDice) p.getRelic(MagicDice.ID);
             MagicDice.CheckResult res = dice.magicCheck();
-            if (res == MagicDice.CheckResult.CRITICAL_SUCCESS) {
-                addToBot(new ApplyPowerAction(p, p, new BufferPower(p, magicNumber * 2)));
-            } else if (res == MagicDice.CheckResult.SUCCESS) {
+            if (res == MagicDice.CheckResult.SUCCESS) {
                 addToBot(new ApplyPowerAction(p, p, new BufferPower(p, magicNumber)));
             } else {
                 addToBot(new ApplyPowerAction(p, p, new VulnerablePower(p, 1, false)));

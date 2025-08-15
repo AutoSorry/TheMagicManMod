@@ -1,6 +1,7 @@
 package basicmod.cards;
 
 import basicmod.character.MyCharacter;
+import basicmod.powers.HappyPower;
 import basicmod.powers.Magics;
 import basicmod.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -24,25 +25,25 @@ public class RandomSpeaking extends BaseCard{
             1
     );
 
-    private static final int DAMAGE = 4;
-    private static final int UPG_DAMAGE = 2;
+    private static final int DAMAGE = 6;
+    private static final int UPG_DAMAGE = 3;
     private static final int MAGIC = 4;
-    private static final int UPG_MAGIC = 2;
 
     public RandomSpeaking() {
         super(ID, info);
 
         setDamage(DAMAGE, UPG_DAMAGE);
-        setMagic(MAGIC, UPG_MAGIC);
+        setMagic(MAGIC);
 
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int amt = random(1, magicNumber);
+        int amt1 = random(1, magicNumber);
+        int amt2 = random(1, magicNumber);
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new LoseHPAction(m, p, amt));
-        addToBot(new ApplyPowerAction(p, p, new Magics(p, amt)));
+        addToBot(new ApplyPowerAction(p, p, new HappyPower(p, amt1)));
+        addToBot(new ApplyPowerAction(p, p, new Magics(p, amt2)));
     }
 
     @Override

@@ -14,9 +14,9 @@ public class Alarmism extends BaseCard{
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
             CardType.SKILL,
-            CardRarity.UNCOMMON,
+            CardRarity.RARE,
             CardTarget.SELF,
-            1
+            2
     );
 
     public Alarmism() {

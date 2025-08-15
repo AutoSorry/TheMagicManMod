@@ -46,11 +46,6 @@ public class MagicBigMove extends BaseCard{
                 addToBot(new ApplyPowerAction(mon, p, new WeakPower(mon, magicNumber * 2, false)));
             }
 
-        } else if (res == MagicDice.CheckResult.SUCCESS) {
-            for (AbstractMonster mon: AbstractDungeon.getMonsters().monsters) {
-                addToBot(new ApplyPowerAction(mon, p, new VulnerablePower(mon, magicNumber, false)));
-                addToBot(new ApplyPowerAction(mon, p, new WeakPower(mon, magicNumber, false)));
-            }
         } else {
             addToBot(new MakeTempCardInHandAction(new Bb(), magicNumber));
         }

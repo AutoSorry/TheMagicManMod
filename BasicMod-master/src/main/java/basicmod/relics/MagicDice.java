@@ -2,6 +2,7 @@ package basicmod.relics;
 
 import basicmod.character.MyCharacter;
 import basicmod.powers.*;
+import com.evacipated.cardcrawl.mod.stslib.actions.common.AutoplayCardAction;
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -48,6 +49,18 @@ public class MagicDice extends BaseRelic {
         AbstractPlayer p = AbstractDungeon.player;
         addToBot(new RelicAboveCreatureAction(p, this));
         addToBot(new ApplyPowerAction(p, p, new Magics(p, START_MAGIC)));
+    }
+
+    @Override
+    public void atTurnStart() {
+        flash();
+        AbstractPlayer p = AbstractDungeon.player;
+        int amount = p.getPower(Magics.POWER_ID).amount;
+        if (amount > 30) {
+            addToBot(new LoseHPAction(p, p, amount - 30));
+            addToBot(new ReducePowerAction(p, p, Magics.POWER_ID, amount - 30));
+            addToBot(new PlayTopCardAction(p, false));
+        }
     }
 
     private int getBonus(AbstractCreature p) {
@@ -175,8 +188,13 @@ public class MagicDice extends BaseRelic {
             resultTextIdx = 3;
         }
         if ((magicResult == CheckResult.CRITICAL_FAILURE || magicResult == CheckResult.FAILURE)) {
-            if (p.hasPower(CannotBeng.POWER_ID) && p.getPower(Magics.POWER_ID).amount > 1) {
-                addToBot(new ReducePowerAction(p, p, Magics.POWER_ID, 1));
+            if (p.hasPower(CannotBeng.POWER_ID)) {
+                if (p.getPower(Magics.POWER_ID).amount == 1) {
+                    addToBot(new GainEnergyAction(1));
+                    addToBot(new DrawCardAction(p, 1));
+                } else {
+                    addToBot(new ReducePowerAction(p, p, Magics.POWER_ID, 1));
+                }
             }
             if (p.hasPower(LifeFlavorPower.POWER_ID)) {
                 addToBot(new AddTemporaryHPAction(p, p, p.getPower(LifeFlavorPower.POWER_ID).amount));
@@ -187,6 +205,12 @@ public class MagicDice extends BaseRelic {
         }
         String text = TEXT1[0] + dc + TEXT1[1] + result + TEXT1[2] + TEXT1[resultTextIdx];
         AbstractDungeon.effectList.add(new ThoughtBubble(p.dialogX, p.dialogY, 3.0F, text, true));
+        if (magicResult == CheckResult.CRITICAL_SUCCESS) {
+            magicResult = CheckResult.SUCCESS;
+        }
+        if (magicResult == CheckResult.CRITICAL_FAILURE) {
+            magicResult = CheckResult.FAILURE;
+        }
         return magicResult;
     }
 

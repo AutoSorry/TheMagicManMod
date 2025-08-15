@@ -100,7 +100,7 @@
     "NAME": "HitCard",
     "DESCRIPTIONS": [
       "At start of turn, randomly gain ",
-      " Strength or Dexterity or ${modID}:Magics."
+      " Strength or Dexterity or ${modID}:Happy."
     ]
   },
   "${modID}:Magics": {

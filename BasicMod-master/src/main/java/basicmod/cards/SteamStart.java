@@ -41,9 +41,7 @@ public class SteamStart extends BaseCard{
     public void use(AbstractPlayer p, AbstractMonster m) {
         MagicDice dice = (MagicDice) p.getRelic(MagicDice.ID);
         MagicDice.CheckResult res = dice.magicCheck();
-        if (res == MagicDice.CheckResult.CRITICAL_SUCCESS) {
-            addToBot(new DamageAction(m, new DamageInfo(p, damage * 2, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-        } else if (res == MagicDice.CheckResult.SUCCESS) {
+        if (res == MagicDice.CheckResult.SUCCESS) {
             addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         } else {
             addToBot(new ApplyPowerAction(p, p, new SteamDelay(p, damage, 7)));

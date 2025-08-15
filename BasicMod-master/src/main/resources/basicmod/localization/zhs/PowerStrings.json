@@ -92,7 +92,7 @@
     "NAME": "神人导术",
     "DESCRIPTIONS": [
       "回合开始时，随机增加 ",
-      " 层 力量 或 敏捷 或 ${modID}:神人值 。"
+      " 层 力量 或 敏捷 或 ${modID}:兴奋 。"
     ]
   },
   "${modID}:HitPower": {
